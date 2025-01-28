@@ -19,5 +19,12 @@ public class MusicManager : MonoBehaviour
     private void Start()
     {
         audioManager.SetupPlaylist(playlists);
+        foreach (var playlist in playlists)
+        {
+            
+            Coroutine coroutine = StartCoroutine(playlist.Play());
+            playlist.coroutinePlaylist = coroutine;
+
+        }
     }
 }
