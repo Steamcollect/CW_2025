@@ -88,9 +88,7 @@ public class AudioManager : MonoBehaviour
             audioSource.volume = playlist.volumMultiplier;
             audioSource.loop = playlist.isLooping;
             audioSource.outputAudioMixerGroup = musicMixerGroup;
-
-            audioSource.clip = playlist.clip;
-            audioSource.Play();
+            playlist.audioSource = audioSource;
         }
     }
 
