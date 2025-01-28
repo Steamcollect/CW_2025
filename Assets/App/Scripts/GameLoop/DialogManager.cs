@@ -9,10 +9,10 @@ public class DialogManager : MonoBehaviour
     [SerializeField] Vector2 delayBetweenDialogs;
 
     [Header("References")]
-    [SerializeField] SSO_DialogData[] dialogsPossible;
+    [SerializeField] SSO_DialogEventData[] dialogsPossible;
 
-    List<SSO_DialogData> dialogsInGame = new();
-    Queue<SSO_DialogData> dialogsOnGoing = new();
+    List<SSO_DialogEventData> dialogsInGame = new();
+    Queue<SSO_DialogEventData> dialogsOnGoing = new();
 
     //[Space(10)]
     // RSO
@@ -56,7 +56,7 @@ public class DialogManager : MonoBehaviour
         dialogsOnGoing.Enqueue(dialogsInGame[rnd]);
         dialogsInGame.RemoveAt(rnd);
     }
-    void AddDialogToOnGoing(SSO_DialogData dialogToAdd)
+    void AddDialogToOnGoing(SSO_DialogEventData dialogToAdd)
     {
         dialogsOnGoing.Enqueue(dialogToAdd);
     }

@@ -3,8 +3,8 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.Events;
 
-[CreateAssetMenu(fileName = "DialogData", menuName = "SSO/Dialog/DialogData")]
-public class SSO_DialogData : ScriptableObject
+[CreateAssetMenu(fileName = "DialogData", menuName = "SSO/Event/DialogData")]
+public class SSO_DialogEventData : ScriptableObject
 {
     [TextArea] public string text;
 
