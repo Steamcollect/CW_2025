@@ -14,8 +14,9 @@ public class QTE_Manager : MonoBehaviour
     [SerializeField] KeyCode[] keyCodePossible;
     //[Header("References")]
 
-    //[Space(10)]
+    [Space(10)]
     // RSO
+    [SerializeField] RSO_GameLoopTime rsoGameTime;
     // RSF
     // RSP
 
@@ -42,7 +43,7 @@ public class QTE_Manager : MonoBehaviour
     IEnumerator DelayBetweenQTE()
     {
         yield return new WaitForSeconds(
-            timeBetweenQTE_InTime.Evaluate(Time.time)
+            timeBetweenQTE_InTime.Evaluate(rsoGameTime.Value)
             + Random.Range(delayBetweenQTE.x, delayBetweenQTE.y));
 
         StartNewQTE();
@@ -51,10 +52,10 @@ public class QTE_Manager : MonoBehaviour
     void StartNewQTE()
     {
         List<KeyCode> keys = new List<KeyCode>();
-        for (int i = 0; i < QTE_KeyCountInTime.Evaluate(Time.time); i++)
+        for (int i = 0; i < QTE_KeyCountInTime.Evaluate(rsoGameTime.Value); i++)
             keys.Add(keyCodePossible.GetRandom());
 
-        rseStartNewQTE.Call(keys.ToArray(), timeToResolveQTE_InTime.Evaluate(Time.time));
+        rseStartNewQTE.Call(keys.ToArray(), timeToResolveQTE_InTime.Evaluate(rsoGameTime.Value));
     }
 
     void OnQTE_End()
