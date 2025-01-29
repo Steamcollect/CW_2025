@@ -116,12 +116,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delayBeetween: 0.5
-  Panel: {fileID: 8587463149615154990}
+  panel: {fileID: 8587463149615154990}
   answerPrefab: {fileID: 7002677423512141030, guid: 3d14dbaec0d23b445943ef6e5054df1d,
     type: 3}
   list: {fileID: 3308119959160213184}
   descriptionText: {fileID: 1698769101130736289}
   onShowAnswers: {fileID: 11400000, guid: ee4941d0684912041b9f90338a01c67f, type: 2}
+  onCloseAnswer: {fileID: 11400000, guid: 47e7bf4a776120248b04aa2661314fde, type: 2}
 --- !u!1 &3308119959160213184
 GameObject:
   m_ObjectHideFlags: 0

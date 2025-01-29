@@ -8,20 +8,18 @@ public class Answer_UI : MonoBehaviour
 
     [SerializeField] private RSE_OnDialogEnd onDialogEnd;
     [SerializeField] private RSE_EventFinished onEventFinished;
+    [SerializeField] private RSE_CloseAnswerUI closeAnswerUI;
 
     public void PrintAnswer(string text)
     {
-        button.onClick.AddListener(delegate 
-        { 
-            _ = onDialogEnd; 
-            _ = onEventFinished;
-            Clear();
-        } );
+        button.onClick.AddListener(delegate { OnClick(); } );
         this.text.text = text;
     }
 
-    private void Clear()
+    private void OnClick()
     {
-        Destroy(this);
+        onDialogEnd.Call();
+        onEventFinished.Call();
+        closeAnswerUI.Call();
     }
 }
