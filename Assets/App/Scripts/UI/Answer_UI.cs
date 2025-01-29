@@ -11,7 +11,17 @@ public class Answer_UI : MonoBehaviour
 
     public void PrintAnswer(string text)
     {
-        button.onClick.AddListener(delegate { _ = onDialogEnd; _ = onEventFinished; } );
+        button.onClick.AddListener(delegate 
+        { 
+            _ = onDialogEnd; 
+            _ = onEventFinished;
+            Clear();
+        } );
         this.text.text = text;
+    }
+
+    private void Clear()
+    {
+        Destroy(this);
     }
 }

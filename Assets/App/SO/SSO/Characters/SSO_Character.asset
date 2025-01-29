@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Jean Pedrovich de la Noche Grispepin Salomon Wandersmith
   dialogs:
+  - {fileID: 11400000, guid: 62bd76362e69ec84089aacdadabb03f5, type: 2}
   - {fileID: 11400000, guid: 8a7fd36ba9bac6e4f82320e2fa78ade5, type: 2}

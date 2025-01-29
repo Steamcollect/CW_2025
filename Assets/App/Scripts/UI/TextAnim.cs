@@ -46,10 +46,11 @@ public class TextAnim : MonoBehaviour
                 onShowAnswerUI.Call(dialogEventData.awnsers, dialogEventData.text);
                 break;
             case DialogType.Event:
+                onDialogEnd.Call();
                 Debug.Log("Call Event");
                 break;
             default:
-                Debug.Log("Call Next Dialog");
+                onDialogEnd.Call();
                 break;
         }
     }

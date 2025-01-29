@@ -120,4 +120,7 @@ MonoBehaviour:
   keyCodePossible: 610000007a00000065000000720000007400000079000000
   rsoGameTime: {fileID: 11400000, guid: 7327492d99608c249899951d4fad8d2c, type: 2}
   rseOnQTE_End: {fileID: 11400000, guid: 0189fb27e6ff9c3419050c9b75366cc3, type: 2}
+  rseQTEEvent: {fileID: 11400000, guid: f1c83fddc03238147b4ea27cedfe9ccd, type: 2}
   rseStartNewQTE: {fileID: 11400000, guid: fbd5ace5ff5a79f4199c17699433233b, type: 2}
+  rseSendEvent: {fileID: 11400000, guid: ea0e5f49ea6329a43af50d6687a5e9f8, type: 2}
+  rseEventFinished: {fileID: 11400000, guid: 2edb750cd1577204e9261de14fbf967d, type: 2}
