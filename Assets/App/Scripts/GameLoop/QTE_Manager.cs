@@ -21,18 +21,22 @@ public class QTE_Manager : MonoBehaviour
 
     [Header("Input")]
     [SerializeField] RSE_OnQTE_End rseOnQTE_End;
+    [SerializeField] RSE_QTEEvent rseQTEEvent;
 
     [Header("Output")]
     [SerializeField] RSE_StartNewQTE rseStartNewQTE;
     [SerializeField] RSE_SendEvent rseSendEvent;
+    [SerializeField] RSE_EventFinished rseEventFinished;
 
     private void OnEnable()
     {
         rseOnQTE_End.action += OnQTE_End;
+        rseQTEEvent.action += StartNewQTE;
     }
     private void OnDisable()
     {
         rseOnQTE_End.action -= OnQTE_End;
+        rseQTEEvent.action -= StartNewQTE;
     }
 
     private void Start()
@@ -46,7 +50,7 @@ public class QTE_Manager : MonoBehaviour
             timeBetweenQTE_InTime.Evaluate(rsoGameTime.Value.timeSinceStart)
             + Random.Range(delayBetweenQTE.x, delayBetweenQTE.y));
 
-        StartNewQTE();
+        rseSendEvent.Call(new Event{eventType = EventType.QTE, time = 3f},false);
     }
 
     void StartNewQTE()
@@ -60,6 +64,7 @@ public class QTE_Manager : MonoBehaviour
 
     void OnQTE_End()
     {
+        rseEventFinished.Call();
         StartCoroutine(DelayBetweenQTE());
     }
 }
