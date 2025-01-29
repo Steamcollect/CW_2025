@@ -13,8 +13,20 @@ MonoBehaviour:
   m_Name: Test
   m_EditorClassIdentifier: 
   text: Test
-  type: 2
-  awnsers: []
+  type: 1
+  awnsers:
+  - text: Eliot il pue
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+  - text: Eliot il pue 2
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+  - text: Eliot il pue mais plus
+    events:
+      m_PersistentCalls:
+        m_Calls: []
   events:
     m_PersistentCalls:
       m_Calls: []

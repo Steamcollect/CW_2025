@@ -6,42 +6,51 @@ public class TextAnim : MonoBehaviour
 {
     [Header("Settings")]
     [SerializeField] private float speed;
-    [SerializeField] private float charAnimationDuration;
-    [SerializeField] private AnimationCurve curve;
-    [SerializeField] private float sizeScale;
-    [SerializeField] private string message;
 
     [Header("References")]
     [SerializeField] private TextMeshProUGUI text;
 
-    public float duration;
-    private float timeElapsed;
+    [Header("RSE")]
+    [SerializeField] private RSE_HandleDialog onHandleDialog;
+    [SerializeField] private RSE_OnDialogEnd onDialogEnd;
+    [Space(5)]
+    [SerializeField] private RSE_ShowAnswerUI onShowAnswerUI;
 
-    private void Start()
+    private void OnEnable()
     {
-        PrintText(message);
+        onHandleDialog.action += HandleDialog;
     }
 
-    private void PrintText(string message)
+    private void OnDisable()
+    {
+        onHandleDialog.action -= HandleDialog;
+    }
+
+    private void HandleDialog(SSO_DialogEventData dialogEventData)
+    {
+        StartCoroutine(PrintText(dialogEventData));
+    }
+
+    private IEnumerator PrintText(SSO_DialogEventData dialogEventData)
     {
         text.ForceMeshUpdate();
-        int total = text.textInfo.characterCount;
-        for(int i = 0; i < total; i++)
+
+        for(int i = 0; i < dialogEventData.text.Length; i++)
         {
-            TMP_CharacterInfo charInfo = text.textInfo.characterInfo[i];
+            text.text += dialogEventData.text[i];
+            yield return new WaitForSeconds(speed);
+        }
 
-            if(!charInfo.isVisible)
-            {
-                continue;
-            }
-
-            Vector3[] verts = text.textInfo.meshInfo[charInfo.materialReferenceIndex].vertices;
-
-            for(int j = 0; j < 4; j++)
-            {
-                Vector3 orig = verts[charInfo.vertexIndex + j];
-                verts[charInfo.vertexIndex + j] = orig + new Vector3(0, Mathf.Sin(Time.time * 2f + orig.x * 0) * 10f, 0);
-            }
+        switch (dialogEventData.type) {
+            case DialogType.Awnser:
+                onShowAnswerUI.Call(dialogEventData.awnsers);
+                break;
+            case DialogType.Event:
+                Debug.Log("Call Event");
+                break;
+            default:
+                Debug.Log("Call Next Dialog");
+                break;
         }
     }
 }
