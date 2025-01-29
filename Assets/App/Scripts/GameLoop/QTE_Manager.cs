@@ -34,6 +34,11 @@ public class QTE_Manager : MonoBehaviour
         rseOnQTE_End.action -= OnQTE_End;
     }
 
+    private void Start()
+    {
+        StartNewQTE();
+    }
+
     IEnumerator DelayBetweenQTE()
     {
         yield return new WaitForSeconds(

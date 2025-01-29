@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 public class QTE_Event : MonoBehaviour
 {
@@ -27,6 +28,9 @@ public class QTE_Event : MonoBehaviour
     [SerializeField] RSE_OnQTE_Missed rseOnQTE_Missed;
     [SerializeField] RSE_OnQTE_Win rseOnQTE_Win;
     [SerializeField] RSE_OnQTE_End rseOnQTE_End;
+    [Space(5)]
+    [SerializeField] RSE_SetQTE_TimeSlider rseSetTimeSliderVisual;
+    [SerializeField] RSE_SetupQTE_UI rseSetupUI;
 
     private void OnEnable()
     {
@@ -42,6 +46,7 @@ public class QTE_Event : MonoBehaviour
         if (isOnEvent)
         {
             timer -= Time.deltaTime;
+            rseSetTimeSliderVisual.Call(timer);
 
             if (Input.anyKeyDown)
             {
@@ -89,6 +94,10 @@ public class QTE_Event : MonoBehaviour
         timer = time;
 
         isOnEvent = true;
+
+        List<string> keys = new();
+        for (int i = 0; i < qte.Length; i++) keys.Add(qte[i].ToString());
+        rseSetupUI.Call(keys.ToArray(), time);
     }
 
     void OnQTE_End()

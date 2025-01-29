@@ -48,7 +48,7 @@ MonoBehaviour:
   delayBetweenDialogs: {x: 3, y: 5}
   dialogsPossible:
   - {fileID: 11400000, guid: 8a7fd36ba9bac6e4f82320e2fa78ade5, type: 2}
-  rseAddDialogToOnGoing: {fileID: 11400000, guid: 6d8b992cd04c59149a200c15e9724443,
+  rseAddDialogToOnGoing: {fileID: 11400000, guid: 2ba11ed9271bf5f4a8a5916dcd70f019,
     type: 2}
   rseOnDialogEnd: {fileID: 11400000, guid: 9397d9fdcbbbdbf47bf2ea08424f482e, type: 2}
   rseHandleDialog: {fileID: 11400000, guid: 1ba9f73319c7a6343b70d4e39e0c74a9, type: 2}

@@ -50,3 +50,6 @@ MonoBehaviour:
   rseOnQTE_Missed: {fileID: 11400000, guid: 0da739f179626294ab1ef17c684df7f5, type: 2}
   rseOnQTE_Win: {fileID: 11400000, guid: 928f5cc6beb693741931feb5b4545dcf, type: 2}
   rseOnQTE_End: {fileID: 11400000, guid: 0189fb27e6ff9c3419050c9b75366cc3, type: 2}
+  rseSetTimeSliderVisual: {fileID: 11400000, guid: f21c7cc331fbcb445a7f05a80ab7e7f3,
+    type: 2}
+  rseSetupUI: {fileID: 11400000, guid: 255daf80895857c49950c74645a914c4, type: 2}
