@@ -46,8 +46,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogOnGoingPreviewCount: 2
   delayBetweenDialogs: {x: 3, y: 5}
-  dialogsPossible:
-  - {fileID: 11400000, guid: 8a7fd36ba9bac6e4f82320e2fa78ade5, type: 2}
+  rsoCurrentCharacter: {fileID: 11400000, guid: 3e437cd86e24c8a40b6548baed4550e4,
+    type: 2}
   rseAddDialogToOnGoing: {fileID: 11400000, guid: 2ba11ed9271bf5f4a8a5916dcd70f019,
     type: 2}
   rseOnDialogEnd: {fileID: 11400000, guid: 9397d9fdcbbbdbf47bf2ea08424f482e, type: 2}

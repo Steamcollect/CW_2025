@@ -56,7 +56,6 @@ public class QTE_Event : MonoBehaviour
                     {
                         if(kcode == currentQTE[currentQTE_Index])
                         {
-                            Debug.Log("KeyCode down: " + kcode);
                             rseOnQTE_KeyWin.Call();
                             currentQTE_Index++;
 
@@ -68,8 +67,6 @@ public class QTE_Event : MonoBehaviour
                         }
                         else
                         {
-                            Debug.Log("Wrong key");
-
                             rseOnQTE_KeyMissed.Call();
                         }
 

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class DialogManager : MonoBehaviour
 {
@@ -9,13 +10,13 @@ public class DialogManager : MonoBehaviour
     [SerializeField] Vector2 delayBetweenDialogs;
 
     [Header("References")]
-    [SerializeField] SSO_DialogEventData[] dialogsPossible;
 
     List<SSO_DialogEventData> dialogsInGame = new();
     Queue<SSO_DialogEventData> dialogsOnGoing = new();
 
     //[Space(10)]
     // RSO
+    [SerializeField] RSO_CurrentCharacter rsoCurrentCharacter;
     // RSF
     // RSP
 
@@ -39,7 +40,9 @@ public class DialogManager : MonoBehaviour
 
     private void Start()
     {
-        if (dialogsPossible.Length == 0)
+        if (rsoCurrentCharacter.Value == null)
+            Debug.LogError("There is no character setup");
+        if (rsoCurrentCharacter.Value.dialogs.Length == 0)
             Debug.LogError("There is no dialog set in the DialogManager");
 
         for (int i = 0; i < dialogOnGoingPreviewCount; i++)
@@ -50,7 +53,7 @@ public class DialogManager : MonoBehaviour
 
     void AddRandomDialogToOnGoing()
     {
-        if (dialogsInGame.Count == 0) dialogsInGame.AddRange(dialogsPossible);
+        if (dialogsInGame.Count == 0) dialogsInGame.AddRange(rsoCurrentCharacter.Value.dialogs);
 
         int rnd = Random.Range(0, dialogsInGame.Count);
         dialogsOnGoing.Enqueue(dialogsInGame[rnd]);
