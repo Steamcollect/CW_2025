@@ -1,4 +1,5 @@
 using System.Collections;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 public class AnswerManager_UI : MonoBehaviour
@@ -7,9 +8,10 @@ public class AnswerManager_UI : MonoBehaviour
     [SerializeField] private float delayBeetween;
 
     [Header("References")]
-    [SerializeField] private GameObject answerPanel;
+    [SerializeField] private GameObject Panel;
     [SerializeField] private Answer_UI answerPrefab;
     [SerializeField] private GameObject list;
+    [SerializeField] private TextMeshProUGUI descriptionText;
 
     [Header("RSE")]
     [SerializeField] private RSE_ShowAnswerUI onShowAnswers;
@@ -26,12 +28,13 @@ public class AnswerManager_UI : MonoBehaviour
 
     private void Awake()
     {
-        answerPanel.SetActive(false);
+        Panel.SetActive(false);
     }
 
-    public void ShowAnswers(DialogAwnser[] answers)
+    public void ShowAnswers(DialogAwnser[] answers, string text)
     {
-        answerPanel.SetActive(true);
+        descriptionText.text = text;
+        Panel.SetActive(true);
         StartCoroutine(ShowAnswerCoroutine(answers));
     }
 

@@ -91,6 +91,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 7009723530808588511}
+  button: {fileID: 2926217131545107464}
+  onDialogEnd: {fileID: 11400000, guid: 9397d9fdcbbbdbf47bf2ea08424f482e, type: 2}
 --- !u!114 &2926217131545107464
 MonoBehaviour:
   m_ObjectHideFlags: 0

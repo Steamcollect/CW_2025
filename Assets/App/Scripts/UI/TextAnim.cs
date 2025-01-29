@@ -43,7 +43,7 @@ public class TextAnim : MonoBehaviour
 
         switch (dialogEventData.type) {
             case DialogType.Awnser:
-                onShowAnswerUI.Call(dialogEventData.awnsers);
+                onShowAnswerUI.Call(dialogEventData.awnsers, dialogEventData.text);
                 break;
             case DialogType.Event:
                 Debug.Log("Call Event");
