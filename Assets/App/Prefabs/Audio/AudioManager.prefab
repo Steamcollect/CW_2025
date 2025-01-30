@@ -63,5 +63,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4b52ec97edf46a488a3d4a1bc926193, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playlists: []
+  playlists:
+  - clips: []
+    volumMultiplier: 1
+    isLooping: 1
+    randomize: 0
+    audioSource: {fileID: 0}
   audioManager: {fileID: 8800516172224025859}
+  rseAudioFadeOut: {fileID: 11400000, guid: 3cbb817cbce61d342abdae1d58b98bf9, type: 2}

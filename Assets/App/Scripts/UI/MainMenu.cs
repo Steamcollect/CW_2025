@@ -12,11 +12,15 @@ public class MainMenu : MonoBehaviour
     // RSP
 
     //[Header("Input")]
-    //[Header("Output")]
+    [Header("Output")]
+    [SerializeField] RSE_AudioFadeOut rseAudioFadeOut;
 
     public void PlayButton()
     {
-        SceneManager.LoadScene("Game");
+        rseAudioFadeOut.Call(() =>
+        {
+            SceneManager.LoadScene("Game");
+        });
     }
 
     public void QuitButton()
