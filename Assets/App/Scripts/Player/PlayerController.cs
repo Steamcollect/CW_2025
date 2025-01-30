@@ -10,6 +10,15 @@ public class PlayerController : MonoBehaviour
     {
         playerState.Value = PlayerState.Driving;
     }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if(playerState.Value == PlayerState.Driving) playerState.Value = PlayerState.Dating;
+            else playerState.Value = PlayerState.Driving;
+        }
+    }
 }
 
 public enum PlayerState
