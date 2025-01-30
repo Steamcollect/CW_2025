@@ -51,4 +51,19 @@ public class Playlist
         }
         return clip;
     }
+
+    public IEnumerator Fade(float targetVolum, float fadeTime)
+    {
+        targetVolum = Mathf.Clamp01(targetVolum);
+        float startVolum = volumMultiplier;
+        float timer = 0;
+
+        while (timer < fadeTime)
+        {
+            timer += Time.deltaTime;
+            volumMultiplier = Mathf.Lerp(startVolum, targetVolum, timer / fadeTime);
+            audioSource.volume = volumMultiplier;
+            yield return null;
+        }
+    }
 }
