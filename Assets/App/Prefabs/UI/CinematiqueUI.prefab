@@ -314,6 +314,7 @@ MonoBehaviour:
   secJumpPower: -5
   secJumpCount: 1
   secJumpDuration: 0.3
+  visuals: {fileID: 11400000, guid: bef010d37b28e194db0df39bc4fa042e, type: 2}
   rseSetupCinematics: {fileID: 11400000, guid: 30e58618cb5401a46ab071b65a05cb3b, type: 2}
 --- !u!1 &3403715784415362359
 GameObject:

@@ -34,8 +34,9 @@ public class CinematiqueUI : MonoBehaviour
     [SerializeField] int secJumpCount;
     [SerializeField] float secJumpDuration;
 
-    //[Space(10)]
+    [Space(10)]
     // RSO
+    [SerializeField] RSO_CinematicVisuals visuals;
     // RSF
     // RSP
 
@@ -50,6 +51,11 @@ public class CinematiqueUI : MonoBehaviour
     private void OnDisable()
     {
         rseSetupCinematics.action -= CreateImages;
+    }
+
+    private void Start()
+    {
+        CreateImages(visuals.Value);
     }
 
     void CreateImages(Sprite[] sprites)
