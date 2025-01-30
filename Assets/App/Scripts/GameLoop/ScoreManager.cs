@@ -23,9 +23,18 @@ public class ScoreManager : MonoBehaviour
     //[Header("Input")]
     //[Header("Output")]
 
-    void OnEventCountChange()
+    private void OnEnable()
     {
-        if (isCall) return;
+        rsoCurrentEventCount.OnChanged += OnEventCountChange;
+    }
+    private void OnDisable()
+    {
+        rsoCurrentEventCount.OnChanged -= OnEventCountChange;
+    }
+
+    void OnEventCountChange(int eventCount)
+    {
+        if (isCall && eventCount >= maxEventToCallTheEnd) return;
 
         isCall = true;
         for (int i = 0; i < scoreValue.Length; i++)
