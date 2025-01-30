@@ -44,7 +44,7 @@ public class AnswerManager_UI : MonoBehaviour
         ClearAnswerList();
     }
 
-    public void ShowAnswers(DialogAwnser[] answers, string text)
+    public void ShowAnswers(string[] answers, string text)
     {
         descriptionText.text = text;
         panel.SetActive(true);
@@ -61,12 +61,12 @@ public class AnswerManager_UI : MonoBehaviour
         answerList.Clear();
     }
 
-    private IEnumerator ShowAnswerCoroutine(DialogAwnser[] answers)
+    private IEnumerator ShowAnswerCoroutine(string[] answers)
     {
         for (int i = 0; i < answers.Length; i++)
         {
             Answer_UI answer = Instantiate(answerPrefab, list.transform);
-            answer.PrintAnswer(answers[i].text);
+            answer.PrintAnswer(answers[i]);
             answerList.Add(answer);
             yield return new WaitForSeconds(delayBeetween);
         }

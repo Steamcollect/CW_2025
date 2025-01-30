@@ -11,16 +11,10 @@ public class SSO_DialogEventData : ScriptableObject
     public DialogType type;
 
     [Space(10)]
-    public DialogAwnser[] awnsers;
+    [TextArea] public string[] awnsers;
 
     [Space(10)]
-    public UnityEvent events;
-}
-
-[System.Serializable]
-public struct DialogAwnser
-{
-    [TextArea] public string text;
+    public UnityEvent awnsersEvents;
 
     [Space(10)]
     public UnityEvent events;

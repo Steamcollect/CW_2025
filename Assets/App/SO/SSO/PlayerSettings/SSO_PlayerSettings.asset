@@ -9,9 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1e93eaf233d4c94a8f46358556a6358, type: 3}
-  m_Name: SSO_Character
+  m_Script: {fileID: 11500000, guid: d9caea39b0e44114f96fc489e81adffa, type: 3}
+  m_Name: SSO_PlayerSettings
   m_EditorClassIdentifier: 
-  characterName: Jean Pedrovich de la Noche Grispepin Salomon Wandersmith
-  dialogs:
-  - {fileID: 11400000, guid: 62bd76362e69ec84089aacdadabb03f5, type: 2}
+  cameraRotationSpeed: 0.2

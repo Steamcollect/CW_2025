@@ -78,11 +78,13 @@ public class EventManager : MonoBehaviour
         _eventRunning = true;
         switch (e.eventType)
         {
-            case EventType.EventWorld:
-                break;
             case EventType.QTE:
+                Debug.Log("Spawn QTE Event");
+                //Start QTE
                 break;
             case EventType.Question:
+                //Start Question
+                Debug.Log("Ask Question !");
                 break;
             default:
                 Debug.LogWarning($"Event type not supported:{e.eventType}");

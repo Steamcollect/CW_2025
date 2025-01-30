@@ -15,19 +15,10 @@ MonoBehaviour:
   text: Tomate
   type: 1
   awnsers:
-  - text: Eliot il pue
-    events:
-      m_PersistentCalls:
-        m_Calls: []
-  - text: Eliot il pue 2
-    events:
-      m_PersistentCalls:
-        m_Calls: []
-  - text: Eliot il pue mais plus
-    events:
-      m_PersistentCalls:
-        m_Calls: []
-  events:
+  - 1
+  - 2
+  - 3
+  awnsersEvents:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 11400000, guid: 2ba11ed9271bf5f4a8a5916dcd70f019, type: 2}
@@ -44,3 +35,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  events:
+    m_PersistentCalls:
+      m_Calls: []

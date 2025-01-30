@@ -9,6 +9,7 @@ public class TextAnim : MonoBehaviour
 
     [Header("References")]
     [SerializeField] private GameObject panel;
+    [SerializeField] private TextMeshProUGUI nameText;
     [SerializeField] private TextMeshProUGUI text;
 
     [Header("RSE")]
@@ -18,16 +19,28 @@ public class TextAnim : MonoBehaviour
     [Space(5)]
     [SerializeField] private RSE_ShowAnswerUI onShowAnswerUI;
 
+    [Header("RSO")]
+    [SerializeField] private RSO_CurrentCharacter character;
+
     private void OnEnable()
     {
         onHandleDialog.action += HandleDialog;
         onCloseAnswerUI.action += ClosePanel;
+
+        character.OnChanged += SetCharacterName;
     }
 
     private void OnDisable()
     {
         onHandleDialog.action -= HandleDialog;
         onCloseAnswerUI.action -= ClosePanel;
+
+        character.OnChanged -= SetCharacterName;
+    }
+
+    private void SetCharacterName(SSO_Character character)
+    {
+        nameText.text = character.characterName;
     }
 
     private void HandleDialog(SSO_DialogEventData dialogEventData)
@@ -54,6 +67,7 @@ public class TextAnim : MonoBehaviour
 
         switch (dialogEventData.type) {
             case DialogType.Awnser:
+                dialogEventData.awnsersEvents.Invoke();
                 onShowAnswerUI.Call(dialogEventData.awnsers, dialogEventData.text);
                 break;
             case DialogType.Event:
