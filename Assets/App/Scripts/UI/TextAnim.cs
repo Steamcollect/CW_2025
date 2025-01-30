@@ -72,6 +72,7 @@ public class TextAnim : MonoBehaviour
                 break;
             case DialogType.Event:
                 yield return new WaitForSeconds(2f);
+                dialogEventData.events.Invoke();
                 ClosePanel();
                 onDialogEnd.Call();
                 Debug.Log("Call Event");

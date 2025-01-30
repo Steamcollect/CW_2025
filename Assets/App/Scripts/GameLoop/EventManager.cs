@@ -7,6 +7,7 @@ public class EventManager : MonoBehaviour
     [Header("Input")]
     [SerializeField] private RSE_SendEvent rseSendEvent;
     [SerializeField] private RSE_EventFinished rseEventFinished;
+    [SerializeField] private RSE_QTEEvent qteEvent;
     
     private readonly Queue<Event> _events = new();
     private Event _currentEvent;
@@ -47,10 +48,18 @@ public class EventManager : MonoBehaviour
         }
     }
     
-    private void ReceiveEvent(Event e, bool priority = false)
+    private void ReceiveEvent(SSO_Event eventData)
     {
-        if (priority)
+        Debug.Log("Receive Event");
+        Event e = new Event()
+        { 
+            eventType = eventData.eventType,
+            time = eventData.time,
+        };
+
+        if (e.time == 0)
         {
+            Debug.Log("");
             if (_eventRunning)
             {
                 Queue<Event> queue = new();
@@ -69,12 +78,14 @@ public class EventManager : MonoBehaviour
             ProcessEvent(e);
             return;
         }
+
         _eventWaiting = true;
         _events.Enqueue(new Event{eventType = e.eventType, time = _internalTime + e.time});
     }
 
     private void ProcessEvent(Event e)
     {
+        Debug.Log("Process Event");
         _eventRunning = true;
         switch (e.eventType)
         {
@@ -87,7 +98,7 @@ public class EventManager : MonoBehaviour
                 Debug.Log("Ask Question !");
                 break;
             default:
-                Debug.LogWarning($"Event type not supported:{e.eventType}");
+                Debug.LogWarning($"Event type not supported:{e.eventLocationType}");
                 break;
         }
     }
@@ -96,13 +107,9 @@ public class EventManager : MonoBehaviour
 
 public struct Event
 {
-    public float time;
     public EventType eventType;
-}
-
-public enum EventType
-{
-    QTE,
-    EventWorld,
-    Question
+    public SSO_DialogEventData eventData;
+    public float time;
+    public EventLocationType eventLocationType;
+    public GameObject eventVisual;
 }

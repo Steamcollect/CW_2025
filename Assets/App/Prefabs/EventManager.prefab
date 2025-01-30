@@ -47,3 +47,4 @@ MonoBehaviour:
   timeBetweenEvents: 120
   rseSendEvent: {fileID: 11400000, guid: ea0e5f49ea6329a43af50d6687a5e9f8, type: 2}
   rseEventFinished: {fileID: 11400000, guid: 2edb750cd1577204e9261de14fbf967d, type: 2}
+  qteEvent: {fileID: 11400000, guid: f1c83fddc03238147b4ea27cedfe9ccd, type: 2}

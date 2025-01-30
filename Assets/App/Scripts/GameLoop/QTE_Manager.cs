@@ -45,7 +45,7 @@ public class QTE_Manager : MonoBehaviour
             timeBetweenQTE_InTime.Evaluate(rsoGameTime.Value.timeSinceStart)
             + Random.Range(delayBetweenQTE.x, delayBetweenQTE.y));
 
-        rseSendEvent.Call(new Event{eventType = EventType.QTE, time = 3f},false);
+        //rseSendEvent.Call(new Event{eventType = EventType.QTE, time = 3f}, false);
     }
 
     void StartNewQTE()
