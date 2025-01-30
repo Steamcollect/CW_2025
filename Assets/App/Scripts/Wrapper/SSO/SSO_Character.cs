@@ -5,4 +5,5 @@ public class SSO_Character : ScriptableObject
 {
     public string characterName;
     public SSO_DialogEventData[] dialogs;
+    public bool isMan;
 }
