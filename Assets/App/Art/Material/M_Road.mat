@@ -21,7 +21,8 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: M_Road
-  m_Shader: {fileID: 4800000, guid: 650dd9526735d5b46b79224bc6e94025, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: b00f7c043d3de9345ad1468897fc4f94,
+    type: 3}
   m_Parent: {fileID: 2100000, guid: 07d2a3fa7d6fa1d43b40f0ce65e90e10, type: 2}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -41,5 +42,6 @@ Material:
     m_Floats: []
     m_Colors:
     - _BaseColor: {r: 0.15, g: 0.15, b: 0.15, a: 1}
+    - _Base_Color: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 1}
     - _Color: {r: 0.14999998, g: 0.14999998, b: 0.14999998, a: 1}
   m_BuildTextureStacks: []
