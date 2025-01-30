@@ -75,8 +75,6 @@ public class DialogManager : MonoBehaviour
 
     void OnDialogEnd()
     {
-        AddRandomDialogToOnGoing();
-
         StartCoroutine(DelayBetweenDialogs());
     }
 

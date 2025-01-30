@@ -2,7 +2,7 @@ using System.Collections;
 using TMPro;
 using UnityEditor.VersionControl;
 using UnityEngine;
-public class TextAnim : MonoBehaviour
+public class DialogUI : MonoBehaviour
 {
     [Header("Settings")]
     [SerializeField] private float speed;
@@ -38,6 +38,11 @@ public class TextAnim : MonoBehaviour
         character.OnChanged -= SetCharacterName;
     }
 
+    private void Start()
+    {
+        panel.SetActive(false);
+    }
+
     private void SetCharacterName(SSO_Character character)
     {
         nameText.text = character.characterName;
@@ -65,23 +70,26 @@ public class TextAnim : MonoBehaviour
             yield return new WaitForSeconds(speed);
         }
 
-        switch (dialogEventData.type) {
-            case DialogType.Awnser:
-                dialogEventData.awnsersEvents.Invoke();
-                onShowAnswerUI.Call(dialogEventData.awnsers, dialogEventData.text);
-                break;
-            case DialogType.Event:
-                yield return new WaitForSeconds(2f);
-                dialogEventData.events.Invoke();
-                ClosePanel();
-                onDialogEnd.Call();
-                Debug.Log("Call Event");
-                break;
-            default:
-                yield return new WaitForSeconds(2f);
-                ClosePanel();
-                onDialogEnd.Call();
-                break;
+        if(dialogEventData.awnsers.Length == 0)
+        {
+            yield return new WaitForSeconds(2f);
+
+            dialogEventData.nextDialog.Invoke();
+
+            ClosePanel();
+            onDialogEnd.Call();
+        }
+        else
+        {
+            if (dialogEventData.blockQTE ) // QTE is active
+            {
+                //yield return new WaitUntil(() => /*On event false */);
+            }
+
+            if (dialogEventData.hideDialogPanel) panel.SetActive(false);
+
+            dialogEventData.nextDialog.Invoke();
+            onShowAnswerUI.Call(dialogEventData);
         }
     }
 }

@@ -34,9 +34,11 @@ public class EventManager : MonoBehaviour
     {
         _internalTime += Time.deltaTime;
         _timeSinceLastEvent += Time.deltaTime;
-        if( !_eventWaiting || _eventRunning) return;
+        if ( !_eventWaiting || _eventRunning) return;
+
         if (_currentEvent.time <= _internalTime && _timeSinceLastEvent >= timeBetweenEvents)
         {
+            
             _timeSinceLastEvent = 0f;
             ProcessEvent(_currentEvent);
             if (_events.Count <= 0)
@@ -59,7 +61,7 @@ public class EventManager : MonoBehaviour
 
         if (e.time == 0)
         {
-            Debug.Log("");
+            Debug.Log("e.time = 0");
             if (_eventRunning)
             {
                 Queue<Event> queue = new();
@@ -79,8 +81,12 @@ public class EventManager : MonoBehaviour
             return;
         }
 
+        Debug.Log(_events.Count);
         _eventWaiting = true;
-        _events.Enqueue(new Event{eventType = e.eventType, time = _internalTime + e.time});
+        _currentEvent = new Event { eventType = e.eventType, time = _internalTime + e.time };
+        _events.Enqueue(_currentEvent);
+
+        
     }
 
     private void ProcessEvent(Event e)

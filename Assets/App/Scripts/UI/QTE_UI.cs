@@ -63,6 +63,7 @@ public class QTE_UI : MonoBehaviour
 
     void SetupQTE_UI(string[] keys, float maxTime)
     {
+        Debug.Log("qsdqs");
         timerSlider.maxValue = maxTime;
         currentLetterIndex = 0;
 

@@ -39,22 +39,37 @@ public class QTE_Manager : MonoBehaviour
         rseQTEEvent.action -= StartNewQTE;
     }
 
+    private void Start()
+    {
+        StartCoroutine(DelayBetweenQTE());
+    }
+
     IEnumerator DelayBetweenQTE()
     {
         yield return new WaitForSeconds(
-            timeBetweenQTE_InTime.Evaluate(rsoGameTime.Value.timeSinceStart)
+            timeBetweenQTE_InTime.Evaluate(Time.time)
             + Random.Range(delayBetweenQTE.x, delayBetweenQTE.y));
 
+        StartNewQTE();
         //rseSendEvent.Call(new Event{eventType = EventType.QTE, time = 3f}, false);
     }
 
     void StartNewQTE()
     {
+        StartCoroutine(LaunchQTE());
+    }
+    IEnumerator LaunchQTE()
+    {
+        
+        //yield return new WaitUntil(() => /*On event false */);
+
         List<KeyCode> keys = new List<KeyCode>();
-        for (int i = 0; i < QTE_KeyCountInTime.Evaluate(rsoGameTime.Value.timeSinceStart); i++)
+        for (int i = 0; i < QTE_KeyCountInTime.Evaluate(Time.time); i++)
             keys.Add(keyCodePossible.GetRandom());
 
-        rseStartNewQTE.Call(keys.ToArray(), timeToResolveQTE_InTime.Evaluate(rsoGameTime.Value.timeSinceStart));
+        rseStartNewQTE.Call(keys.ToArray(), timeToResolveQTE_InTime.Evaluate(Time.time));
+
+        yield return null;
     }
 
     void OnQTE_End()

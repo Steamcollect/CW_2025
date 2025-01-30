@@ -6,23 +6,22 @@ using UnityEngine.Events;
 [CreateAssetMenu(fileName = "DialogData", menuName = "SSO/Event/DialogData")]
 public class SSO_DialogEventData : ScriptableObject
 {
+    [Header("Dialog")]
     [TextArea] public string text;
+    public bool hideDialogPanel;
+    public bool blockQTE;
 
-    public DialogType type;
+    [Header("Answer")]
+    public string awnserDescription;
+    public Answer[] awnsers;
 
-    [Space(10)]
-    [TextArea] public string[] awnsers;
-
-    [Space(10)]
-    public UnityEvent awnsersEvents;
-
-    [Space(10)]
-    public UnityEvent events;
+    [Header("Next Dialog")]
+    public UnityEvent nextDialog;
 }
 
-public enum DialogType
+[System.Serializable]
+public struct Answer
 {
-    NoAwnser,
-    Awnser,
-    Event
+    [TextArea] public string text;
+    public int score;
 }

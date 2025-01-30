@@ -44,11 +44,11 @@ public class AnswerManager_UI : MonoBehaviour
         ClearAnswerList();
     }
 
-    public void ShowAnswers(string[] answers, string text)
+    public void ShowAnswers(SSO_DialogEventData dialogEventData)
     {
-        descriptionText.text = text;
+        descriptionText.text = dialogEventData.awnserDescription;
         panel.SetActive(true);
-        StartCoroutine(ShowAnswerCoroutine(answers));
+        StartCoroutine(ShowAnswerCoroutine(dialogEventData.awnsers));
     }
 
     private void ClearAnswerList()
@@ -61,12 +61,12 @@ public class AnswerManager_UI : MonoBehaviour
         answerList.Clear();
     }
 
-    private IEnumerator ShowAnswerCoroutine(string[] answers)
+    private IEnumerator ShowAnswerCoroutine(Answer[] answers)
     {
         for (int i = 0; i < answers.Length; i++)
         {
             Answer_UI answer = Instantiate(answerPrefab, list.transform);
-            answer.PrintAnswer(answers[i]);
+            answer.PrintAnswer(answers[i].text);
             answerList.Add(answer);
             yield return new WaitForSeconds(delayBeetween);
         }

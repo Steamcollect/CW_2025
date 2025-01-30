@@ -10,11 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0ec9a86aaa6edcb49a3f36942a635e81, type: 3}
-  m_Name: Tomate 2
+  m_Name: Marchant
   m_EditorClassIdentifier: 
-  text: Tomate 2
-  type: 0
-  awnsers: []
-  events:
+  text: Salut comment ca va
+  hideDialogPanel: 0
+  awnserDescription: 
+  awnsers:
+  - text: ca va
+    score: 1000
+  - text: tg
+    score: -10000
+  nextDialog:
     m_PersistentCalls:
       m_Calls: []
