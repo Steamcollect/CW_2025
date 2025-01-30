@@ -45,11 +45,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   chunks:
-  - {fileID: 5423012899804961217, guid: ed4438cbe47e8ca4f8f864c749eb9d9b, type: 3}
   - {fileID: 6785325608407676979, guid: 62b7b129daf2745478e66ab559d466ef, type: 3}
   - {fileID: 6785325608407676979, guid: e088a182e5095a841951eb112f9b18e9, type: 3}
   chunkCount: 2
-  speedMove: 0
-  _move: 0
+  speedMove: 5
+  _move: 1
   rseMoveChunk: {fileID: 11400000, guid: ae6dabc55c2df974db9f476fff4400c7, type: 2}
   rseStopChunk: {fileID: 11400000, guid: 522844701347d9641870993f26ba78f7, type: 2}

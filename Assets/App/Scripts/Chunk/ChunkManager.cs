@@ -94,7 +94,8 @@ public class ChunkManager : MonoBehaviour
     {
         if (_activeChunks[indexChunks].endChunk.transform.position.z <= -0.05f)
         {
-            _activeChunks[indexChunks].transform.position = _activeChunks[indexChunks == 0 ? _activeChunks.Length -1 : (indexChunks -1)  % _activeChunks.Length].endChunk.transform.position;
+            _activeChunks[indexChunks].transform.position = _activeChunks[indexChunks == 0 ? _activeChunks.Length -1 : 
+                (indexChunks -1)  % _activeChunks.Length].endChunk.transform.position;
             indexChunks = (indexChunks+1) % _activeChunks.Length;
             _activeChunks[indexChunks].gameObject.SetActive(true);
         }
