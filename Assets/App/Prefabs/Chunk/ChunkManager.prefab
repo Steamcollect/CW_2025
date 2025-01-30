@@ -49,5 +49,6 @@ MonoBehaviour:
   chunkCount: 5
   speedMove: 20
   _move: 1
+  rsoCurrentLoc: {fileID: 11400000, guid: f54cf93e7cb4aa74380b35f02c1aae5b, type: 2}
   rseMoveChunk: {fileID: 11400000, guid: ae6dabc55c2df974db9f476fff4400c7, type: 2}
   rseStopChunk: {fileID: 11400000, guid: 522844701347d9641870993f26ba78f7, type: 2}

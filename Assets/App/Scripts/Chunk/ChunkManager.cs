@@ -9,7 +9,10 @@ public class ChunkManager : MonoBehaviour
     [SerializeField] private float speedMove = 1f;
     [Space(10)]
     [SerializeField] private bool _move;
-    
+
+    [Header("References")]
+    [SerializeField] RSO_CurrentLocation rsoCurrentLoc;
+
     [Header("Input")]
     [SerializeField] private RSE_MoveChunk rseMoveChunk;
     [SerializeField] private RSE_StopChunk rseStopChunk;
@@ -98,6 +101,7 @@ public class ChunkManager : MonoBehaviour
                 (indexChunks -1)  % _activeChunks.Length].endChunk.transform.position;
             indexChunks = (indexChunks+1) % _activeChunks.Length;
             _activeChunks[indexChunks].gameObject.SetActive(true);
+            rsoCurrentLoc.Value = _activeChunks[indexChunks].locationType;
         }
     }
     
