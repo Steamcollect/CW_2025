@@ -59,8 +59,7 @@ public class QTE_Manager : MonoBehaviour
         StartCoroutine(LaunchQTE());
     }
     IEnumerator LaunchQTE()
-    {
-        
+    {        
         //yield return new WaitUntil(() => /*On event false */);
 
         List<KeyCode> keys = new List<KeyCode>();

@@ -1,9 +1,11 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 public class PlayerCamera : MonoBehaviour
 {
     [Header("Settings")]
     [SerializeField] private float smoothSpeed = 1.0f;
+    Vector3 targeForward = Vector3.zero;
 
     [Header("References")]
     [SerializeField] private Transform drivingTransform;
@@ -24,23 +26,22 @@ public class PlayerCamera : MonoBehaviour
         playerState.OnChanged -= SwitchCamera;
     }
 
-    private void SwitchCamera(PlayerState playerState)
+    private void Start()
     {
-        StopAllCoroutines();
-
-        if (playerState == PlayerState.Driving) StartCoroutine(SmoothLerp(smoothSpeed, drivingTransform, datingTransform));
-        else StartCoroutine(SmoothLerp(smoothSpeed, datingTransform, drivingTransform));
+        targeForward = drivingTransform.forward;
     }
 
-    private IEnumerator SmoothLerp(float time, Transform startPos, Transform endPos)
+    private void Update()
     {
-        float elapsedtime = 0.0f;
+        transform.forward = Vector3.SmoothDamp(
+            transform.forward,
+            targeForward,
+            ref velocity,
+            smoothSpeed);
+    }
 
-        while (elapsedtime < time)
-        {
-            transform.localEulerAngles = Vector3.Lerp(startPos.localEulerAngles, endPos.localEulerAngles, elapsedtime / time);
-            elapsedtime += Time.deltaTime;
-            yield return null;
-        }
+    private void SwitchCamera(PlayerState playerState)
+    {
+        targeForward = playerState == PlayerState.Driving ? drivingTransform.forward : datingTransform.forward;
     }
 }
