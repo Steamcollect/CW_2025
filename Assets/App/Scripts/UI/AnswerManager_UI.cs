@@ -66,7 +66,7 @@ public class AnswerManager_UI : MonoBehaviour
         for (int i = 0; i < answers.Length; i++)
         {
             Answer_UI answer = Instantiate(answerPrefab, list.transform);
-            answer.PrintAnswer(answers[i].text, answers[i].score);
+            answer.PrintAnswer(answers[i]);
             answerList.Add(answer);
             yield return new WaitForSeconds(delayBeetween);
         }

@@ -12,11 +12,47 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ec9a86aaa6edcb49a3f36942a635e81, type: 3}
   m_Name: Dialog_1
   m_EditorClassIdentifier: 
-  text: Dialog 1, aime les fleurs, et le cheval
+  text: Show What?
   hideDialogPanel: 0
   blockQTE: 0
-  awnserDescription: 
-  awnsers: []
+  awnserDescription: Show What
+  awnsers:
+  - text: Benn
+    score: 0
+    eventToCall:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: e84c6f2dbd4244449a70c04ee9fdb2a7, type: 2}
+          m_TargetAssemblyTypeName: BT.ScriptablesObject.RuntimeScriptableEvent`1[[System.String,
+            mscorlib
+          m_MethodName: Call
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Benn
+            m_BoolArgument: 0
+          m_CallState: 2
+  - text: Building
+    score: 0
+    eventToCall:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: e84c6f2dbd4244449a70c04ee9fdb2a7, type: 2}
+          m_TargetAssemblyTypeName: BT.ScriptablesObject.RuntimeScriptableEvent`1[[System.String,
+            mscorlib
+          m_MethodName: Call
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Building
+            m_BoolArgument: 0
+          m_CallState: 2
   nextDialog:
     m_PersistentCalls:
       m_Calls:

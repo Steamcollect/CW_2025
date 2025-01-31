@@ -24,4 +24,6 @@ public struct Answer
 {
     [TextArea] public string text;
     public int score;
+
+    public UnityEvent eventToCall;
 }

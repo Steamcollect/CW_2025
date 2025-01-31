@@ -10,18 +10,20 @@ public class Answer_UI : MonoBehaviour
     [SerializeField] private RSE_EventFinished onEventFinished;
     [SerializeField] private RSE_CloseAnswerUI closeAnswerUI;
     [SerializeField] RSO_PlayerScore rsoPlayerScore;
-    int scoreGiven;
+    Answer answer;
 
-    public void PrintAnswer(string text, int scoreGiven)
+    public void PrintAnswer(Answer answer)
     {
         button.onClick.AddListener(delegate { OnClick(); } );
-        this.text.text = text;
-        this.scoreGiven = scoreGiven;
+        text.text = answer.text;
+        this.answer = answer;
     }
 
     private void OnClick()
     {
-        rsoPlayerScore.Value += scoreGiven;
+        rsoPlayerScore.Value += answer.score;
+        answer.eventToCall?.Invoke();
+
         onDialogEnd.Call();
         onEventFinished.Call();
         closeAnswerUI.Call();

@@ -1,12 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering;
 
 public class DialogManager : MonoBehaviour
 {
     [Header("Settings")]
-    [SerializeField] int dialogOnGoingPreviewCount;
     [SerializeField] Vector2 delayBetweenDialogs;
 
     [Header("References")]    
@@ -45,19 +45,18 @@ public class DialogManager : MonoBehaviour
         if (rsoCurrentCharacter.Value.dialogs.Length == 0)
             Debug.LogError("There is no dialog set in the DialogManager");
 
-        for (int i = 0; i < dialogOnGoingPreviewCount; i++)
-            AddRandomDialogToOnGoing();
+        //for (int i = 0; i < dialogOnGoingPreviewCount; i++)
+        //    AddRandomDialogToOnGoing();
 
         StartCoroutine(DelayBetweenDialogs());
     }
 
-    void AddRandomDialogToOnGoing()
+    void AddNextDialogOnList()
     {
         if (dialogsInGame.Count == 0) dialogsInGame.AddRange(rsoCurrentCharacter.Value.dialogs);
 
-        int rnd = Random.Range(0, dialogsInGame.Count);
-        dialogsOnGoing.Enqueue(dialogsInGame[rnd]);
-        dialogsInGame.RemoveAt(rnd);
+        dialogsOnGoing.Enqueue(dialogsInGame[0]);
+        dialogsInGame.RemoveAt(0);
     }
     void AddDialogToOnGoing(SSO_DialogEventData dialogToAdd)
     {
@@ -66,7 +65,7 @@ public class DialogManager : MonoBehaviour
 
     void HandleNewDialog()
     {
-        if (dialogsOnGoing.Count == 0) AddRandomDialogToOnGoing();
+        if (dialogsOnGoing.Count == 0) AddNextDialogOnList();
         rseHandleDialog.Call(dialogsOnGoing.Dequeue());
     }
 
