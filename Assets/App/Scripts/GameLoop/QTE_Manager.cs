@@ -27,6 +27,7 @@ public class QTE_Manager : MonoBehaviour
     [SerializeField] RSE_StartNewQTE rseStartNewQTE;
     [SerializeField] RSE_SendEvent rseSendEvent;
     [SerializeField] RSE_EventFinished rseEventFinished;
+    [SerializeField] RSO_CurrentEventCount rsoCurrentEventCount;
 
     private void OnEnable()
     {
@@ -75,5 +76,6 @@ public class QTE_Manager : MonoBehaviour
     {
         rseEventFinished.Call();
         StartCoroutine(DelayBetweenQTE());
+        rsoCurrentEventCount.Add();
     }
 }

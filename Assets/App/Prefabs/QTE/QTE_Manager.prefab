@@ -124,3 +124,5 @@ MonoBehaviour:
   rseStartNewQTE: {fileID: 11400000, guid: fbd5ace5ff5a79f4199c17699433233b, type: 2}
   rseSendEvent: {fileID: 11400000, guid: ea0e5f49ea6329a43af50d6687a5e9f8, type: 2}
   rseEventFinished: {fileID: 11400000, guid: 2edb750cd1577204e9261de14fbf967d, type: 2}
+  rsoCurrentEventCount: {fileID: 11400000, guid: ecdea104f9b0ab643b39ea2a7ceeafda,
+    type: 2}

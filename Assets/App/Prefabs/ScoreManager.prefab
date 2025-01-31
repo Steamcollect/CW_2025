@@ -44,10 +44,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68cf4cd8aad9b9341ab4ef646b7d71d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxEventToCallTheEnd: 30
+  maxEventToCallTheEnd: 1
+  scoreValue:
+  - minMax: {x: -100, y: 100}
+    manVisuals:
+    - {fileID: 21300000, guid: 24e1adf8f3e52e6488ec5c3c5a7387fa, type: 3}
+    girlVisuals:
+    - {fileID: 21300000, guid: 70c3a2033b97f7343810cb11df225a0d, type: 3}
   rsoScore: {fileID: 11400000, guid: 1184a0f4202c5ea41a17629c4023f5ad, type: 2}
   rsoCurrentEventCount: {fileID: 11400000, guid: ecdea104f9b0ab643b39ea2a7ceeafda,
     type: 2}
   rsoCurrentCharacter: {fileID: 11400000, guid: 3e437cd86e24c8a40b6548baed4550e4,
     type: 2}
   rsoCinematicVisual: {fileID: 11400000, guid: bef010d37b28e194db0df39bc4fa042e, type: 2}
+  rseAudioFadeOut: {fileID: 11400000, guid: 3cbb817cbce61d342abdae1d58b98bf9, type: 2}

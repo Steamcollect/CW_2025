@@ -16,6 +16,7 @@ public class DialogManager : MonoBehaviour
     //[Space(10)]
     // RSO
     [SerializeField] RSO_CurrentCharacter rsoCurrentCharacter;
+    [SerializeField] RSO_CurrentEventCount rsoCurrentEventCount;
     // RSF
     // RSP
 
@@ -71,6 +72,7 @@ public class DialogManager : MonoBehaviour
 
     void OnDialogEnd()
     {
+        rsoCurrentEventCount.Add();
         StartCoroutine(DelayBetweenDialogs());
     }
 

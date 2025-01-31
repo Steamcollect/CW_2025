@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class CinematiqueUI : MonoBehaviour
 {
@@ -42,7 +43,8 @@ public class CinematiqueUI : MonoBehaviour
 
     [Header("Input")]
     [SerializeField] RSE_SetupCinematics rseSetupCinematics;
-    //[Header("Output")]
+    [Header("Output")]
+    [SerializeField] RSE_AudioFadeOut rseFadeOut;
 
     private void OnEnable()
     {
@@ -100,5 +102,10 @@ public class CinematiqueUI : MonoBehaviour
                 nextButton.interactable = true;
             });
         });
+    }
+
+    public void MainMenuButton()
+    {
+        rseFadeOut.Call(() => SceneManager.LoadScene("MainMenu"));
     }
 }
