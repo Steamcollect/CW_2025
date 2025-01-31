@@ -40,18 +40,19 @@ public class ScoreManager : MonoBehaviour
 
     void OnEventCountChange(int eventCount)
     {
-        if (isCall && eventCount >= maxEventToCallTheEnd) return;
-
-        isCall = true;
-        for (int i = 0; i < scoreValue.Length; i++)
+        if(!isCall && eventCount >= maxEventToCallTheEnd)
         {
-            if (scoreValue[i].minMax.x <= rsoScore.Value && scoreValue[i].minMax.y >= rsoScore.Value)
+            isCall = true;
+            for (int i = 0; i < scoreValue.Length; i++)
             {
-                rsoCinematicVisual.Value = rsoCurrentCharacter.Value.isMan ? scoreValue[i].manVisuals : scoreValue[i].girlVisuals;
-                rseAudioFadeOut.Call(() => SceneManager.LoadScene("Cinematic"));
-                return;
+                if (scoreValue[i].minMax.x <= rsoScore.Value && scoreValue[i].minMax.y >= rsoScore.Value)
+                {
+                    rsoCinematicVisual.Value = rsoCurrentCharacter.Value.isMan ? scoreValue[i].manVisuals : scoreValue[i].girlVisuals;
+                    rseAudioFadeOut.Call(() => SceneManager.LoadScene("Cinematic"));
+                    return;
+                }
             }
-        }
+        }        
     }
 }
 

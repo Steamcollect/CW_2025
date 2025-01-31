@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68cf4cd8aad9b9341ab4ef646b7d71d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxEventToCallTheEnd: 1
+  maxEventToCallTheEnd: 30
   scoreValue:
   - minMax: {x: -100, y: 100}
     manVisuals:
