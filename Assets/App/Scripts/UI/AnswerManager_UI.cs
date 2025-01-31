@@ -54,7 +54,6 @@ public class AnswerManager_UI : MonoBehaviour
 
             if(timeToAnswer <= 0)
             {
-                isTiming = false;
                 rsoPlayerScore.Value -= 1;
                 onDialogEnd.Call();
                 onEventFinished.Call();
@@ -65,6 +64,7 @@ public class AnswerManager_UI : MonoBehaviour
 
     public void ClosePanel()
     {
+        isTiming = false;
         panel.SetActive(false);
         ClearAnswerList();
     }
