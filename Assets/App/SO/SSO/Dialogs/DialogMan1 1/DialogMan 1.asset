@@ -12,87 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ec9a86aaa6edcb49a3f36942a635e81, type: 3}
   m_Name: DialogMan 1
   m_EditorClassIdentifier: 
-  text: "Pensais tu \xE0 un endroit en pariculier ?"
+  text: "Franchement, ta caisse a du style\u2026 Bon, c\u2019est pas une Golf 4 tun\xE9e
+    avec n\xE9ons bleus, mais \xE7a passe."
   hideDialogPanel: 0
   blockQTE: 0
   awnserDescription: 
   awnsers:
-  - text: "Il y'a une nouvelle expo au mus\xE9e des beaux arts !"
+  - text: "C\u2019est une voiture, pas un stand de Need for Speed Underground."
     score: 2
     eventToCall:
       m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 11400000, guid: 2ba11ed9271bf5f4a8a5916dcd70f019, type: 2}
-          m_TargetAssemblyTypeName: BT.ScriptablesObject.RuntimeScriptableEvent`1[[SSO_DialogEventData,
-            Assembly-CSharp
-          m_MethodName: Call
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 11400000, guid: 2a5583efbfa500140a7d3570fa032ef7,
-              type: 2}
-            m_ObjectArgumentAssemblyTypeName: SSO_DialogEventData, Assembly-CSharp
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - text: Je connais un bon resto si tu veux.
+        m_Calls: []
+  - text: "Merci ! J\u2019essaie de la garder propre"
     score: 2
     eventToCall:
       m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 11400000, guid: 2ba11ed9271bf5f4a8a5916dcd70f019, type: 2}
-          m_TargetAssemblyTypeName: BT.ScriptablesObject.RuntimeScriptableEvent`1[[SSO_DialogEventData,
-            Assembly-CSharp
-          m_MethodName: Call
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 11400000, guid: 2a5583efbfa500140a7d3570fa032ef7,
-              type: 2}
-            m_ObjectArgumentAssemblyTypeName: SSO_DialogEventData, Assembly-CSharp
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - text: L'aquarium de la ville est pas loin si tu veux.
-    score: -2
-    eventToCall:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 11400000, guid: 2ba11ed9271bf5f4a8a5916dcd70f019, type: 2}
-          m_TargetAssemblyTypeName: BT.ScriptablesObject.RuntimeScriptableEvent`1[[SSO_DialogEventData,
-            Assembly-CSharp
-          m_MethodName: Call
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 11400000, guid: 16f7b032a8c71f24880ed598b0662404,
-              type: 2}
-            m_ObjectArgumentAssemblyTypeName: SSO_DialogEventData, Assembly-CSharp
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - text: On pourrait aller voir le coucher du soleil au parc.
-    score: -2
-    eventToCall:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 11400000, guid: 2ba11ed9271bf5f4a8a5916dcd70f019, type: 2}
-          m_TargetAssemblyTypeName: BT.ScriptablesObject.RuntimeScriptableEvent`1[[SSO_DialogEventData,
-            Assembly-CSharp
-          m_MethodName: Call
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 11400000, guid: 16f7b032a8c71f24880ed598b0662404,
-              type: 2}
-            m_ObjectArgumentAssemblyTypeName: SSO_DialogEventData, Assembly-CSharp
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+        m_Calls: []
   nextDialog:
     m_PersistentCalls:
       m_Calls: []

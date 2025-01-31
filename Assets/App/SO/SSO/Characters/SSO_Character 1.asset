@@ -14,7 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Jean-Kev
   dialogs:
-  - {fileID: 11400000, guid: 896001f0eb64f484abc9b57efb7035ec, type: 2}
-  - {fileID: 11400000, guid: 896001f0eb64f484abc9b57efb7035ec, type: 2}
+  - {fileID: 11400000, guid: fdf2b7c88e13cae4a9c49b15361d0724, type: 2}
   isMan: 0
   scoreValues: []
