@@ -9,9 +9,7 @@ public class DialogManager : MonoBehaviour
     [SerializeField] int dialogOnGoingPreviewCount;
     [SerializeField] Vector2 delayBetweenDialogs;
 
-    [Header("References")] [SerializeField]
-    private SSO_Character character;
-    
+    [Header("References")]    
     List<SSO_DialogEventData> dialogsInGame = new();
     Queue<SSO_DialogEventData> dialogsOnGoing = new();
 
@@ -41,8 +39,6 @@ public class DialogManager : MonoBehaviour
 
     private void Start()
     {
-        rsoCurrentCharacter.Value = character;
-        
         if (rsoCurrentCharacter.Value == null)
             Debug.LogError("There is no character setup");
         if (rsoCurrentCharacter.Value.dialogs.Length == 0)

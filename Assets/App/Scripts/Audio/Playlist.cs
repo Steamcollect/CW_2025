@@ -8,8 +8,8 @@ public class Playlist
     public AudioClip[] clips;
 
     [Space(10)]
-    public float volumMultiplier;
-    public bool isLooping;
+    [Range(0, 1)] public float volumMultiplier;
+    public bool isLooping = true;
     public bool randomize;
 
     [HideInInspector] public AudioSource audioSource;
