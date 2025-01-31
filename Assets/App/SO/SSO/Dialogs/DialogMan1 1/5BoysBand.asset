@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ec9a86aaa6edcb49a3f36942a635e81, type: 3}
+  m_Name: 5BoysBand
+  m_EditorClassIdentifier: 
+  text: "On avait m\xEAme une chor\xE9graphie\u2026 Un m\xE9lange entre danse contemporaine
+    et hip-hop\u2026 Enfin, c\u2019est ce qu\u2019on croyait."
+  hideDialogPanel: 0
+  blockQTE: 0
+  awnserDescription: 
+  awnsers:
+  - text: "Tu r\xE9alises que je vais exiger une d\xE9monstration maintenant ?"
+    score: -2
+    eventToCall:
+      m_PersistentCalls:
+        m_Calls: []
+  - text: "Danse contemporaine et hip-hop ? \xC7a devait \xEAtre\u2026 unique."
+    score: 2
+    eventToCall:
+      m_PersistentCalls:
+        m_Calls: []
+  - text: "Je suis s\xFBr que si je cherche bien, je peux trouver une vieille vid\xE9o
+      de vous."
+    score: 2
+    eventToCall:
+      m_PersistentCalls:
+        m_Calls: []
+  - text: Tu veux dire que vous sautiez partout en faisant des moulinets avec les
+      bras ?
+    score: -2
+    eventToCall:
+      m_PersistentCalls:
+        m_Calls: []
+  nextDialog:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 2ba11ed9271bf5f4a8a5916dcd70f019, type: 2}
+        m_TargetAssemblyTypeName: BT.ScriptablesObject.RuntimeScriptableEvent`1[[SSO_DialogEventData,
+          Assembly-CSharp
+        m_MethodName: Call
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: c56a86f4efb379e4b882a7de012c63dc,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: SSO_DialogEventData, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

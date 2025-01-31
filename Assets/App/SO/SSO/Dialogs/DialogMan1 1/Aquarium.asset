@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ec9a86aaa6edcb49a3f36942a635e81, type: 3}
+  m_Name: Aquarium
+  m_EditorClassIdentifier: 
+  text: "Les aquariums\u2026 Magnifiques et tragiques \xE0 la fois. Une prison de
+    verre o\xF9 des cr\xE9atures majestueuses sont r\xE9duites \xE0 l\u2019\xE9tat
+    de curiosit\xE9s. C\u2019est une m\xE9taphore de notre propre condition, tu ne
+    trouves pas ? Mais bon, j\u2019avoue que voir une raie manta, c\u2019est toujours
+    un peu styl\xE9."
+  hideDialogPanel: 0
+  blockQTE: 0
+  awnserDescription: 
+  awnsers:
+  - text: "Donc tu es contre, mais tu y vas quand m\xEAme ? Belle coh\xE9rence, Jean-K\xE9vin."
+    score: -2
+    eventToCall:
+      m_PersistentCalls:
+        m_Calls: []
+  - text: "T\u2019inqui\xE8te, si un poisson te regarde trop, je le lib\xE8re discr\xE8tement
+      dans l\u2019\xE9vier des toilettes."
+    score: -2
+    eventToCall:
+      m_PersistentCalls:
+        m_Calls: []
+  - text: "On peut toujours boycotter et finir la soir\xE9e devant Le Monde de Nemo
+      \xE0 la place."
+    score: 22
+    eventToCall:
+      m_PersistentCalls:
+        m_Calls: []
+  - text: "\xC7a fait du bien de voir un mec qui assume totalement ses contradictions."
+    score: 2
+    eventToCall:
+      m_PersistentCalls:
+        m_Calls: []
+  nextDialog:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 2ba11ed9271bf5f4a8a5916dcd70f019, type: 2}
+        m_TargetAssemblyTypeName: BT.ScriptablesObject.RuntimeScriptableEvent`1[[SSO_DialogEventData,
+          Assembly-CSharp
+        m_MethodName: Call
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: a3926a37ff588b74b8e2426cd73369ae,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: SSO_DialogEventData, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

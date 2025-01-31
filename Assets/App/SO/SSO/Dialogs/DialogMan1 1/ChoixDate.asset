@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ec9a86aaa6edcb49a3f36942a635e81, type: 3}
+  m_Name: ChoixDate
+  m_EditorClassIdentifier: 
+  text: "Ainsi donc, nous nous dirigeons vers un moment suspendu dans le temps\u2026
+    mais dis-moi, o\xF9 va-t-on sceller cet instant de complicit\xE9 et de d\xE9couverte
+    ?"
+  hideDialogPanel: 0
+  blockQTE: 0
+  awnserDescription: 
+  awnsers:
+  - text: "On va \xE0 l\u2019aquarium, j\u2019esp\xE8re que tu n\u2019as pas peur
+      des poissons."
+    score: -2
+    eventToCall:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 2ba11ed9271bf5f4a8a5916dcd70f019, type: 2}
+          m_TargetAssemblyTypeName: BT.ScriptablesObject.RuntimeScriptableEvent`1[[SSO_DialogEventData,
+            Assembly-CSharp
+          m_MethodName: Call
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: 3fc46618baa74b749b6c02c59fe93ef5,
+              type: 2}
+            m_ObjectArgumentAssemblyTypeName: SSO_DialogEventData, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - text: "Un mus\xE9e, bien s\xFBr, histoire de flatter ton intellect d\xE9j\xE0
+      surdimensionn\xE9."
+    score: -2
+    eventToCall:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 2ba11ed9271bf5f4a8a5916dcd70f019, type: 2}
+          m_TargetAssemblyTypeName: BT.ScriptablesObject.RuntimeScriptableEvent`1[[SSO_DialogEventData,
+            Assembly-CSharp
+          m_MethodName: Call
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: 832b20644933e0b47aeb769e3ed42951,
+              type: 2}
+            m_ObjectArgumentAssemblyTypeName: SSO_DialogEventData, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - text: "Restaurant. Parce que j\u2019ai faim, tout simplement."
+    score: 2
+    eventToCall:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 2ba11ed9271bf5f4a8a5916dcd70f019, type: 2}
+          m_TargetAssemblyTypeName: BT.ScriptablesObject.RuntimeScriptableEvent`1[[SSO_DialogEventData,
+            Assembly-CSharp
+          m_MethodName: Call
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: c09a9d94a04f0b64fa10352dd4f5ef53,
+              type: 2}
+            m_ObjectArgumentAssemblyTypeName: SSO_DialogEventData, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - text: "Un parc, pour profiter du bon air et de ton in\xE9puisable discours sur
+      la nature."
+    score: 2
+    eventToCall:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 2ba11ed9271bf5f4a8a5916dcd70f019, type: 2}
+          m_TargetAssemblyTypeName: BT.ScriptablesObject.RuntimeScriptableEvent`1[[SSO_DialogEventData,
+            Assembly-CSharp
+          m_MethodName: Call
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: 60de2cc537467804c902c8521cf65d6e,
+              type: 2}
+            m_ObjectArgumentAssemblyTypeName: SSO_DialogEventData, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  nextDialog:
+    m_PersistentCalls:
+      m_Calls: []

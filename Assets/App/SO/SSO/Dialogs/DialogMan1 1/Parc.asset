@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ec9a86aaa6edcb49a3f36942a635e81, type: 3}
+  m_Name: Parc
+  m_EditorClassIdentifier: 
+  text: "La nature, enfin ! Bon, y\u2019a s\xFBrement un lobby derri\xE8re ces bancs
+    publics, mais \xE7a reste mieux que le b\xE9ton"
+  hideDialogPanel: 0
+  blockQTE: 0
+  awnserDescription: 
+  awnsers:
+  - text: "Jean-K\xE9vin, c\u2019est un parc, pas un complot."
+    score: -2
+    eventToCall:
+      m_PersistentCalls:
+        m_Calls: []
+  - text: "D\xE9tends-toi et regarde les canards, \xE7a te fera du bien."
+    score: -2
+    eventToCall:
+      m_PersistentCalls:
+        m_Calls: []
+  - text: "Si un banc est un probl\xE8me, on s\u2019assoit par terre ?"
+    score: 2
+    eventToCall:
+      m_PersistentCalls:
+        m_Calls: []
+  - text: "T\u2019as pr\xE9vu de faire un discours aux pigeons ?"
+    score: 2
+    eventToCall:
+      m_PersistentCalls:
+        m_Calls: []
+  nextDialog:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 2ba11ed9271bf5f4a8a5916dcd70f019, type: 2}
+        m_TargetAssemblyTypeName: BT.ScriptablesObject.RuntimeScriptableEvent`1[[SSO_DialogEventData,
+          Assembly-CSharp
+        m_MethodName: Call
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: a3926a37ff588b74b8e2426cd73369ae,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: SSO_DialogEventData, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ec9a86aaa6edcb49a3f36942a635e81, type: 3}
+  m_Name: 3BoysBand
+  m_EditorClassIdentifier: 
+  text: "On avait une chanson qui aurait tout chang\xE9 : \u201CEntre toi et moi,
+    la Lune pleure\u201D. Une ballade puissante, mais injustement incomprise."
+  hideDialogPanel: 0
+  blockQTE: 0
+  awnserDescription: 
+  awnsers:
+  - text: "Entre toi et moi, la Lune pleure\u2019\u2026 Vous avez perdu un pari pour
+      choisir ce titre ?"
+    score: -2
+    eventToCall:
+      m_PersistentCalls:
+        m_Calls: []
+  - text: "J\u2019ai besoin d\u2019entendre cette merveille. T\u2019as encore un
+      enregistrement ?"
+    score: 2
+    eventToCall:
+      m_PersistentCalls:
+        m_Calls: []
+  - text: "Si c\u2019\xE9tait \u2018incompris\u2019, c\u2019est peut-\xEAtre parce
+      que c\u2019\xE9tait\u2026 mauvais ?"
+    score: 2
+    eventToCall:
+      m_PersistentCalls:
+        m_Calls: []
+  - text: "Je suis s\xFBr qu\u2019avec assez de second degr\xE9, \xE7a peut devenir
+      culte."
+    score: -2
+    eventToCall:
+      m_PersistentCalls:
+        m_Calls: []
+  nextDialog:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 2ba11ed9271bf5f4a8a5916dcd70f019, type: 2}
+        m_TargetAssemblyTypeName: BT.ScriptablesObject.RuntimeScriptableEvent`1[[SSO_DialogEventData,
+          Assembly-CSharp
+        m_MethodName: Call
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 3b1c5a41cb08f3b40af983bbd60d69bb,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: SSO_DialogEventData, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

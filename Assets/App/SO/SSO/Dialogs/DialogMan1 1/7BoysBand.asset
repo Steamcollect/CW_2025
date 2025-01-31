@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ec9a86aaa6edcb49a3f36942a635e81, type: 3}
+  m_Name: 7BoysBand
+  m_EditorClassIdentifier: 
+  text: "Ne cherche pas sur YouTube\u2026 Il reste encore quelques vid\xE9os de notre
+    premier concert. J\u2019ai essay\xE9 de toutes les supprimer, mais Internet est
+    impitoyable."
+  hideDialogPanel: 0
+  blockQTE: 0
+  awnserDescription: 
+  awnsers:
+  - text: "Oh non, maintenant je DOIS aller voir \xE7a."
+    score: -2
+    eventToCall:
+      m_PersistentCalls:
+        m_Calls: []
+  - text: "Internet n\u2019oublie jamais\u2026 Et moi non plus."
+    score: 2
+    eventToCall:
+      m_PersistentCalls:
+        m_Calls: []
+  - text: "C\u2019est pas avec cette coupe de cheveux que tu pensais passer inaper\xE7u,
+      avoue."
+    score: 2
+    eventToCall:
+      m_PersistentCalls:
+        m_Calls: []
+  - text: "Tu pr\xE9f\xE8res que je trouve la vid\xE9o, ou qu\u2019on reparle de
+      ton anxi\xE9t\xE9 sociale ?"
+    score: -2
+    eventToCall:
+      m_PersistentCalls:
+        m_Calls: []
+  nextDialog:
+    m_PersistentCalls:
+      m_Calls: []

@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ec9a86aaa6edcb49a3f36942a635e81, type: 3}
+  m_Name: Museum
+  m_EditorClassIdentifier: 
+  text: "Ah, le mus\xE9e ! Un sanctuaire du savoir et de la m\xE9moire collective,
+    o\xF9 les \u0153uvres transcendent le temps\u2026 Bon, j\u2019esp\xE8re juste
+    que ce n\u2019est pas un mus\xE9e trop institutionnel. Le Louvre, c\u2019est
+    sympa, mais c\u2019est quand m\xEAme le symbole de l\u2019art privatis\xE9 par
+    l\u2019\xE9lite bourgeoise, tu vois ce que je veux dire ?"
+  hideDialogPanel: 0
+  blockQTE: 0
+  awnserDescription: 
+  awnsers:
+  - text: "Donc on va au mus\xE9e, mais tu vas r\xE2ler sur chaque tableau. Super
+      soir\xE9e en perspective."
+    score: -2
+    eventToCall:
+      m_PersistentCalls:
+        m_Calls: []
+  - text: "Ne t\u2019en fais pas, c\u2019est un petit mus\xE9e ind\xE9pendant. Avec
+      du vin nature \xE0 la sortie."
+    score: -2
+    eventToCall:
+      m_PersistentCalls:
+        m_Calls: []
+  - text: "J\u2019esp\xE8re que t\u2019as r\xE9vis\xE9, je compte sur toi pour m\u2019expliquer
+      chaque \u0153uvre."
+    score: 2
+    eventToCall:
+      m_PersistentCalls:
+        m_Calls: []
+  - text: "Si c\u2019est pour critiquer, on aurait d\xFB aller voir du street art
+      dans la rue, c\u2019est plus \u2018anti-syst\xE8me\u2019."
+    score: 2
+    eventToCall:
+      m_PersistentCalls:
+        m_Calls: []
+  nextDialog:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 2ba11ed9271bf5f4a8a5916dcd70f019, type: 2}
+        m_TargetAssemblyTypeName: BT.ScriptablesObject.RuntimeScriptableEvent`1[[SSO_DialogEventData,
+          Assembly-CSharp
+        m_MethodName: Call
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: a3926a37ff588b74b8e2426cd73369ae,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: SSO_DialogEventData, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

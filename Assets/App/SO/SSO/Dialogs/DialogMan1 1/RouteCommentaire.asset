@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ec9a86aaa6edcb49a3f36942a635e81, type: 3}
+  m_Name: RouteCommentaire
+  m_EditorClassIdentifier: 
+  text: "Sais-tu que cette autoroute est le symbole parfait de l\u2019oppression
+    capitaliste ? Elle nous force \xE0 suivre un chemin impos\xE9, tel des fourmis
+    dans une fourmili\xE8re n\xE9olib\xE9rale\u2026 Bref, prends la prochaine sortie,
+    \xE7a a l\u2019air plus\u2026 swag."
+  hideDialogPanel: 0
+  blockQTE: 0
+  awnserDescription: 
+  awnsers:
+  - text: "Jean-K\xE9vin, c\u2019est une route, pas une m\xE9taphore de la lutte
+      des classes."
+    score: -2
+    eventToCall:
+      m_PersistentCalls:
+        m_Calls: []
+  - text: "Je prends la sortie\u2026 mais si on se perd, c\u2019est toi qui demandes
+      ton chemin."
+    score: 2
+    eventToCall:
+      m_PersistentCalls:
+        m_Calls: []
+  - text: "Ah ouais, donc si je suis ton raisonnement, les feux rouges, c\u2019est
+      une dictature ?"
+    score: 2
+    eventToCall:
+      m_PersistentCalls:
+        m_Calls: []
+  - text: "D\u2019accord, mais si c\u2019est pour finir coinc\xE9s derri\xE8re un
+      tracteur, je t\u2019oblige \xE0 \xE9couter du Lara Fabian."
+    score: -2
+    eventToCall:
+      m_PersistentCalls:
+        m_Calls: []
+  nextDialog:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 2ba11ed9271bf5f4a8a5916dcd70f019, type: 2}
+        m_TargetAssemblyTypeName: BT.ScriptablesObject.RuntimeScriptableEvent`1[[SSO_DialogEventData,
+          Assembly-CSharp
+        m_MethodName: Call
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: a2b762d0dfeab184eabd22c2e6f17ce8,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: SSO_DialogEventData, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
