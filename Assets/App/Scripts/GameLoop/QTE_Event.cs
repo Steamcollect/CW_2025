@@ -11,7 +11,8 @@ public class QTE_Event : MonoBehaviour
 
     float timer;
 
-    //[Header("References")]
+    [Header("References")] [SerializeField]
+    private SoundComponent soundComponentWin, soundComponentLose, soundComponentClick, soundComponentEventAppear;
 
     //[Space(10)]
     // RSO
@@ -56,12 +57,14 @@ public class QTE_Event : MonoBehaviour
                     {
                         if(kcode == currentQTE[currentQTE_Index])
                         {
+                            soundComponentClick.PlayClip();
                             rseOnQTE_KeyWin.Call();
                             currentQTE_Index++;
 
                             if(currentQTE_Index >= currentQTE.Length)
                             {
                                 rseOnQTE_Win.Call();
+                                soundComponentWin.PlayClip();
                                 OnQTE_End();
                             }
                         }
@@ -78,6 +81,7 @@ public class QTE_Event : MonoBehaviour
             if(timer <= 0)
             {
                 rseOnQTE_Missed.Call();
+                soundComponentLose.PlayClip();
                 OnQTE_End();
             }
         }
@@ -87,7 +91,7 @@ public class QTE_Event : MonoBehaviour
     {
         currentQTE = qte;
         currentQTE_Index = 0;
-
+        soundComponentEventAppear.PlayClip();
         timer = time;
 
         isOnEvent = true;

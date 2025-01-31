@@ -13,6 +13,8 @@ public class DialogUI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI nameText;
     [SerializeField] private TextMeshProUGUI text;
 
+    [SerializeField] private SoundComponent soundComponentBrouah;
+
     [Header("RSE")]
     [SerializeField] private RSE_HandleDialog onHandleDialog;
     [SerializeField] private RSE_OnDialogEnd onDialogEnd;
@@ -22,6 +24,7 @@ public class DialogUI : MonoBehaviour
 
     [Header("RSO")]
     [SerializeField] private RSO_CurrentCharacter character;
+    
 
     private void OnEnable()
     {
@@ -87,6 +90,8 @@ public class DialogUI : MonoBehaviour
                 //yield return new WaitUntil(() => /*On event false */);
             }
 
+            soundComponentBrouah.PlayClip();
+            
             if (dialogEventData.hideDialogPanel) panel.SetActive(false);
 
             dialogEventData.nextDialog.Invoke();
