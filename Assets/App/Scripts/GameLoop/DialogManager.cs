@@ -50,7 +50,7 @@ public class DialogManager : MonoBehaviour
         //for (int i = 0; i < dialogOnGoingPreviewCount; i++)
         //    AddRandomDialogToOnGoing();
 
-        StartCoroutine(DelayBetweenDialogs());
+        StartCoroutine(StartDelay());
     }
 
     void AddNextDialogOnList()
@@ -81,6 +81,11 @@ public class DialogManager : MonoBehaviour
     IEnumerator DelayBetweenDialogs()
     {
         yield return new WaitForSeconds(Random.Range(delayBetweenDialogs.x, delayBetweenDialogs.y));
+        HandleNewDialog();
+    }
+    IEnumerator StartDelay()
+    {
+        yield return new WaitForSeconds(3);
         HandleNewDialog();
     }
 }

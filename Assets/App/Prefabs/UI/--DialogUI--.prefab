@@ -488,7 +488,7 @@ RectTransform:
   m_GameObject: {fileID: 8947643078739400567}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.03, y: 0.03, z: 0.03}
+  m_LocalScale: {x: 0.0093642855, y: 0.0093642855, z: 0.0093642855}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1675918144435701889}
@@ -576,7 +576,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.05
-  timeToAnswer: 10
+  timeToAnswer: 20
   panel: {fileID: 6219632370030025697}
   nameText: {fileID: 1927134043163197000}
   text: {fileID: 3230902117414130857}

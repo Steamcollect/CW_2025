@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: SSO_Character_JeanKev
   m_EditorClassIdentifier: 
   characterName: Jean-Kev
+  charVisual: {fileID: 21300000, guid: 13e64bc8cf5078142b689a556df43316, type: 3}
   dialogs:
   - {fileID: 11400000, guid: fdf2b7c88e13cae4a9c49b15361d0724, type: 2}
   - {fileID: 11400000, guid: c60aa928bc1c5354085b3a5218316ff9, type: 2}
@@ -39,5 +40,5 @@ MonoBehaviour:
   - {fileID: 21300000, guid: e9ba34ed67f32d443be27a7109b0b805, type: 3}
   - {fileID: 21300000, guid: 84c75e011cdd4724fb0b4869efbe6557, type: 3}
   - {fileID: 21300000, guid: 4bd339c6897001648ab190eb2350b380, type: 3}
-  isMan: 0
+  isMan: 1
   scoreValues: []

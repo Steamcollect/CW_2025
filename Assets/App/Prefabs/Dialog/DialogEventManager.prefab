@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd700cb863b137d4ca450beaf94753db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delayBetweenDialogs: {x: 1, y: 1}
+  delayBetweenDialogs: {x: 5, y: 10}
   soundComponentBlabla: {fileID: 6230606983116872700}
   rsoCurrentCharacter: {fileID: 11400000, guid: 3e437cd86e24c8a40b6548baed4550e4,
     type: 2}

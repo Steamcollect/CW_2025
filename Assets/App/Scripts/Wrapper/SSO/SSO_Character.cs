@@ -4,6 +4,7 @@ using UnityEngine;
 public class SSO_Character : ScriptableObject
 {
     public string characterName;
+    public Sprite charVisual;
     public SSO_DialogEventData[] dialogs;
     public Sprite[] bdSprites;
     public bool isMan;

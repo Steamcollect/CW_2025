@@ -202,10 +202,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85f793af60693d0438cce049306db217, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  letterBkColor: {r: 0.90188676, g: 0.84421694, b: 0.7130011, a: 1}
-  letterSelectedColor: {r: 0.8792453, g: 0.6228233, b: 0.15760048, a: 1}
-  letterWinColor: {r: 0, g: 0.8037735, b: 0.02612228, a: 1}
-  letterLoseColor: {r: 0.9547169, g: 0, b: 0, a: 1}
+  letterBkColor: {r: 0, g: 0, b: 0, a: 0.69803923}
+  letterSelectedColor: {r: 0, g: 0, b: 0, a: 1}
+  letterWinColor: {r: 0, g: 0.5924529, b: 0.02023008, a: 1}
+  letterLoseColor: {r: 0.7433963, g: 0, b: 0, a: 1}
   timerSlider: {fileID: 7106894145929455376}
   letterRef: {fileID: 2466132299467513697}
   eventTxt: {fileID: 7503076708464495437}
@@ -373,15 +373,16 @@ MonoBehaviour:
       m_Calls: []
   m_text: A
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 493670605edbe684b8cd6556232ad529, type: 2}
+  m_sharedMaterial: {fileID: -5551661587407665305, guid: 493670605edbe684b8cd6556232ad529,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4284535039
-  m_fontColor: {r: 1, g: 0.8163622, b: 0.3754716, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -398,8 +399,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 130
-  m_fontSizeBase: 130
+  m_fontSize: 120
+  m_fontSizeBase: 120
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -551,8 +552,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 107}
-  m_SizeDelta: {x: 743, y: 150}
+  m_AnchoredPosition: {x: 0, y: 217}
+  m_SizeDelta: {x: 916, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8095291024221593081
 CanvasRenderer:
@@ -584,8 +585,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 493670605edbe684b8cd6556232ad529, type: 2}
+  m_sharedMaterial: {fileID: -5551661587407665305, guid: 493670605edbe684b8cd6556232ad529,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -609,8 +611,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 55
+  m_fontSizeBase: 55
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -645,7 +647,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -564.8609, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

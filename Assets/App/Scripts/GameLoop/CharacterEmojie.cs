@@ -5,7 +5,6 @@ public class CharacterEmojie : MonoBehaviour
 
     [Header("References")]
     [SerializeField] SpriteRenderer characterVisual;
-    [SerializeField] ScoreValue[] scoreValues;
 
     //[Space(10)]
     // RSO
@@ -28,19 +27,20 @@ public class CharacterEmojie : MonoBehaviour
 
     private void Start()
     {
-        OnScoreChange(0);
+        characterVisual.sprite = character.Value.charVisual;
+        //OnScoreChange(0);
     }
 
     void OnScoreChange(int currentScore)
     {
-        for (int i = 0; i < scoreValues.Length; i++)
-        {
-            if (scoreValues[i].minMax.x <= rsoScore.Value && scoreValues[i].minMax.y >= rsoScore.Value)
-            {
-                characterVisual.sprite = character.Value.isMan ? scoreValues[i].manVisuals.GetRandom() : scoreValues[i].girlVisuals.GetRandom();
-                characterVisual.transform.BumpVisual();
-                return;
-            }
-        }
+        //for (int i = 0; i < character.Value.scoreValues.Length; i++)
+        //{
+        //    if (character.Value.scoreValues[i].minMax.x <= rsoScore.Value && character.Value.scoreValues[i].minMax.y >= rsoScore.Value)
+        //    {
+        //        characterVisual.sprite = character.Value.isMan ? character.Value.scoreValues[i].manVisuals.GetRandom() : character.Value.scoreValues[i].girlVisuals.GetRandom();
+        //        characterVisual.transform.BumpVisual();
+        //        return;
+        //    }
+        //}
     }
 }
