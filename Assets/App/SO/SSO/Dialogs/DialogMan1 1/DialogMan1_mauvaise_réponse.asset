@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0ec9a86aaa6edcb49a3f36942a635e81, type: 3}
-  m_Name: Dialog_2
+  m_Name: "DialogMan1_mauvaise_r\xE9ponse"
   m_EditorClassIdentifier: 
-  text: Dialog 2
+  text: "Si tu le souhaites, je trouve pas \xE7a le plus g\xE9nial mais il faut bien
+    d\xE9couvrir de nouveaux endroits."
   hideDialogPanel: 0
   blockQTE: 0
   awnserDescription: 
