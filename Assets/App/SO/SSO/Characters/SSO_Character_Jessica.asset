@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1e93eaf233d4c94a8f46358556a6358, type: 3}
+  m_Name: SSO_Character_Jessica
+  m_EditorClassIdentifier: 
+  characterName: Jessica
+  dialogs:
+  - {fileID: 11400000, guid: a6997a7ae0183f94ca68ec3824d68bcd, type: 2}
+  - {fileID: 11400000, guid: 040d96ba62702d84393cfe963871fa20, type: 2}
+  - {fileID: 11400000, guid: 8f90f3f8f4bd95c48b6a04dc778723b4, type: 2}
+  - {fileID: 11400000, guid: 2358a09e7df44794598d86d566ae4fee, type: 2}
+  - {fileID: 11400000, guid: c07f724cff38bfd419a0393d695a25e3, type: 2}
+  - {fileID: 11400000, guid: ba0d7a32846f8a74c9b760daf24e18d6, type: 2}
+  - {fileID: 11400000, guid: eae54211eafb93c42adfec8337751f45, type: 2}
+  - {fileID: 11400000, guid: a42fb74a985125043a3c541d4881d971, type: 2}
+  - {fileID: 11400000, guid: d31f8d28173f05649b0d82b0c1ab1bb4, type: 2}
+  - {fileID: 11400000, guid: d978651e7f5e48b45a687b03ecaf2976, type: 2}
+  - {fileID: 11400000, guid: 087e4b316d49dee438f0ffb7b932ef74, type: 2}
+  - {fileID: 11400000, guid: b91c0552e7e4f4f4f8a487fd53debcbf, type: 2}
+  - {fileID: 11400000, guid: 99b53244bdec4b646a8bd2078a130275, type: 2}
+  - {fileID: 11400000, guid: 25e48379593a74b4ab18598ffffe6111, type: 2}
+  - {fileID: 11400000, guid: 47b1aa3dc6106f949bff7686c19abbb1, type: 2}
+  - {fileID: 11400000, guid: 6464e01445fce1c4e98a22a5a09eccce, type: 2}
+  bdSprites:
+  - {fileID: 21300000, guid: a08ad0548283ea143978612ffaef1188, type: 3}
+  - {fileID: 21300000, guid: af8c23bc64b5ce540a8426374ffba527, type: 3}
+  - {fileID: 21300000, guid: 2eb0659ea94cd8d42bed84de19169e0a, type: 3}
+  - {fileID: 21300000, guid: 7fdce6d6d7510aa41967699bb35b1a48, type: 3}
+  - {fileID: 21300000, guid: 4f1187af4884a144dbf6daa4faa502c7, type: 3}
+  - {fileID: 21300000, guid: 1b7238f5975b2b14c85a5b57d62088ba, type: 3}
+  - {fileID: 21300000, guid: 2cacc2489694dbd48b57d0a8c7b13be6, type: 3}
+  - {fileID: 21300000, guid: f43e5c42d61928941bebefc7d17b7432, type: 3}
+  isMan: 0
+  scoreValues: []

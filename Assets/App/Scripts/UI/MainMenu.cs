@@ -26,7 +26,7 @@ public class MainMenu : MonoBehaviour
         rseFadeOut.Call();
         rseAudioFadeOut.Call(() =>
         {
-            SceneManager.LoadScene("Game");
+            SceneManager.LoadScene("BD");
         });
     }
 
