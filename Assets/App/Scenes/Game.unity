@@ -552,11 +552,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: ScoreManager
       objectReference: {fileID: 0}
-    - target: {fileID: 8733673992596031262, guid: 0adee76fe23760c47b0b654fd523a09b,
-        type: 3}
-      propertyPath: maxEventToCallTheEnd
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

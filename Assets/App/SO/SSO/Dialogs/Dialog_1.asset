@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: Dialog 1, aime les fleurs, et le cheval
   hideDialogPanel: 0
+  blockQTE: 0
   awnserDescription: 
   awnsers: []
   nextDialog:

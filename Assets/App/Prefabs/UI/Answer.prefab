@@ -95,6 +95,7 @@ MonoBehaviour:
   onDialogEnd: {fileID: 11400000, guid: 9397d9fdcbbbdbf47bf2ea08424f482e, type: 2}
   onEventFinished: {fileID: 11400000, guid: 2edb750cd1577204e9261de14fbf967d, type: 2}
   closeAnswerUI: {fileID: 11400000, guid: 47e7bf4a776120248b04aa2661314fde, type: 2}
+  rsoPlayerScore: {fileID: 11400000, guid: 1184a0f4202c5ea41a17629c4023f5ad, type: 2}
 --- !u!114 &2926217131545107464
 MonoBehaviour:
   m_ObjectHideFlags: 0
