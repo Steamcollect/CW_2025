@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class QTE_Manager : MonoBehaviour
@@ -12,10 +13,13 @@ public class QTE_Manager : MonoBehaviour
     [Space(10)]
     [SerializeField] Vector2 delayBetweenQTE;
     [SerializeField] KeyCode[] keyCodePossible;
+
     [Header("References")]
+    [SerializeField] List<SSO_Event> qteEvents = new();
+    
     [Space(10)]
     // RSO
-    [SerializeField] RSO_GameLoopTime rsoGameTime;
+    [SerializeField] RSO_CurrentLocation rsoCurrentLocation;
     // RSF
     // RSP
 
@@ -67,7 +71,9 @@ public class QTE_Manager : MonoBehaviour
         for (int i = 0; i < QTE_KeyCountInTime.Evaluate(Time.time); i++)
             keys.Add(keyCodePossible.GetRandom());
 
-        rseStartNewQTE.Call(keys.ToArray(), timeToResolveQTE_InTime.Evaluate(Time.time));
+        SSO_Event currentEvent = qteEvents.FindAll(x => x.eventLocationType == rsoCurrentLocation.Value).GetRandom();
+
+        rseStartNewQTE.Call(keys.ToArray(), timeToResolveQTE_InTime.Evaluate(Time.time), currentEvent);
 
         yield return null;
     }

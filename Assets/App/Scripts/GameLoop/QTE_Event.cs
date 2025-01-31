@@ -83,7 +83,7 @@ public class QTE_Event : MonoBehaviour
         }
     }
 
-    void LaunchNewQTE(KeyCode[] qte, float time)
+    void LaunchNewQTE(KeyCode[] qte, float time, SSO_Event ssoEvent)
     {
         currentQTE = qte;
         currentQTE_Index = 0;
@@ -94,7 +94,7 @@ public class QTE_Event : MonoBehaviour
 
         List<string> keys = new();
         for (int i = 0; i < qte.Length; i++) keys.Add(qte[i].ToString());
-        rseSetupUI.Call(keys.ToArray(), time);
+        rseSetupUI.Call(keys.ToArray(), time, ssoEvent);
     }
 
     void OnQTE_End()

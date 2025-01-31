@@ -18,6 +18,7 @@ public class QTE_UI : MonoBehaviour
     [Header("References")]
     [SerializeField] Slider timerSlider;
     [SerializeField] TMP_Text letterRef;
+    [SerializeField] TMP_Text eventTxt;
 
     [Space(5)]
     [SerializeField] Transform lettersContent;
@@ -61,10 +62,12 @@ public class QTE_UI : MonoBehaviour
         rseOnQTELose.action -= OnQTE_Lose;
     }
 
-    void SetupQTE_UI(string[] keys, float maxTime)
+    void SetupQTE_UI(string[] keys, float maxTime, SSO_Event ssoEvent)
     {
         timerSlider.maxValue = maxTime;
         currentLetterIndex = 0;
+        eventTxt.text = ssoEvent.text;
+        StartCoroutine(PrintTxt(ssoEvent.text));
 
         for (int i = 0; i < keys.Length; i++)
         {
@@ -81,6 +84,17 @@ public class QTE_UI : MonoBehaviour
         nextLetter.DOColor(letterSelectedColor, .3f);
 
         timerSlider.gameObject.SetActive(true);
+    }
+    IEnumerator PrintTxt(string txt)
+    {
+        eventTxt.DOFade(1, .1f);
+        eventTxt.text = "";
+
+        for (int i = 0;i < txt.Length; i++)
+        {
+            eventTxt.text += txt[i];
+            yield return new WaitForSeconds(0.05f);
+        }
     }
 
     void ResetQTE_Visual()
@@ -152,6 +166,7 @@ public class QTE_UI : MonoBehaviour
     {
         yield return new WaitForSeconds(.5f);
 
+        eventTxt.DOFade(0, .3f);
         foreach (TMP_Text letter in letters)
         {
             letter.DOFade(0f, .3f); // Change toutes les couleurs
