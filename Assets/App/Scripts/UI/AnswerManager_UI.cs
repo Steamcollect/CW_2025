@@ -46,7 +46,7 @@ public class AnswerManager_UI : MonoBehaviour
 
     public void ShowAnswers(SSO_DialogEventData dialogEventData)
     {
-        descriptionText.text = dialogEventData.awnserDescription;
+        //descriptionText.text = dialogEventData.awnserDescription;
         panel.SetActive(true);
         StartCoroutine(ShowAnswerCoroutine(dialogEventData.awnsers));
     }
