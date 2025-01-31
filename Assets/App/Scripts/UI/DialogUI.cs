@@ -1,6 +1,5 @@
 using System.Collections;
 using TMPro;
-using UnityEditor.VersionControl;
 using UnityEngine;
 public class DialogUI : MonoBehaviour
 {
