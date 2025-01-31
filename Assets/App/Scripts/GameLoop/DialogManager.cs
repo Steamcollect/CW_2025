@@ -3,13 +3,15 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering;
+using UnityEngine.Serialization;
 
 public class DialogManager : MonoBehaviour
 {
     [Header("Settings")]
     [SerializeField] Vector2 delayBetweenDialogs;
-
+    
     [Header("References")]    
+    [SerializeField] private SoundComponent soundComponentBlabla;
     List<SSO_DialogEventData> dialogsInGame = new();
     Queue<SSO_DialogEventData> dialogsOnGoing = new();
 
@@ -67,6 +69,7 @@ public class DialogManager : MonoBehaviour
     {
         if (dialogsOnGoing.Count == 0) AddNextDialogOnList();
         rseHandleDialog.Call(dialogsOnGoing.Dequeue());
+        soundComponentBlabla.PlayClip();
     }
 
     void OnDialogEnd()

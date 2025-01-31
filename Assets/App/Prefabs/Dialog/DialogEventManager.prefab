@@ -29,7 +29,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2739746239724357171}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2143026831174872928
@@ -44,8 +45,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd700cb863b137d4ca450beaf94753db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogOnGoingPreviewCount: 1
   delayBetweenDialogs: {x: 1, y: 1}
+  soundComponentBlabla: {fileID: 6230606983116872700}
   rsoCurrentCharacter: {fileID: 11400000, guid: 3e437cd86e24c8a40b6548baed4550e4,
     type: 2}
   rsoCurrentEventCount: {fileID: 11400000, guid: ecdea104f9b0ab643b39ea2a7ceeafda,
@@ -54,3 +55,129 @@ MonoBehaviour:
     type: 2}
   rseOnDialogEnd: {fileID: 11400000, guid: 9397d9fdcbbbdbf47bf2ea08424f482e, type: 2}
   rseHandleDialog: {fileID: 11400000, guid: 1ba9f73319c7a6343b70d4e39e0c74a9, type: 2}
+--- !u!1001 &3040097710328088997
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 907813020110738794}
+    m_Modifications:
+    - target: {fileID: 879627387722928022, guid: 9aaea1520d80c4347aac17ae00085b22,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 879627387722928022, guid: 9aaea1520d80c4347aac17ae00085b22,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 879627387722928022, guid: 9aaea1520d80c4347aac17ae00085b22,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 879627387722928022, guid: 9aaea1520d80c4347aac17ae00085b22,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 879627387722928022, guid: 9aaea1520d80c4347aac17ae00085b22,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 879627387722928022, guid: 9aaea1520d80c4347aac17ae00085b22,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 879627387722928022, guid: 9aaea1520d80c4347aac17ae00085b22,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 879627387722928022, guid: 9aaea1520d80c4347aac17ae00085b22,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 879627387722928022, guid: 9aaea1520d80c4347aac17ae00085b22,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 879627387722928022, guid: 9aaea1520d80c4347aac17ae00085b22,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8955136041571471961, guid: 9aaea1520d80c4347aac17ae00085b22,
+        type: 3}
+      propertyPath: sound.volumMultiplier
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8955136041571471961, guid: 9aaea1520d80c4347aac17ae00085b22,
+        type: 3}
+      propertyPath: sound.clips.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8955136041571471961, guid: 9aaea1520d80c4347aac17ae00085b22,
+        type: 3}
+      propertyPath: sound.clips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 405f4ab11ebf36648bde41cf06e14eb7, type: 3}
+    - target: {fileID: 8955136041571471961, guid: 9aaea1520d80c4347aac17ae00085b22,
+        type: 3}
+      propertyPath: sound.clips.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 4ea5a75ec5d86f7479ecc7193b3069f4, type: 3}
+    - target: {fileID: 8955136041571471961, guid: 9aaea1520d80c4347aac17ae00085b22,
+        type: 3}
+      propertyPath: sound.clips.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 8a3e8e834906b7641a0f7196b7c0a8d8, type: 3}
+    - target: {fileID: 8955136041571471961, guid: 9aaea1520d80c4347aac17ae00085b22,
+        type: 3}
+      propertyPath: sound.clips.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 49d3bbb212f1d074fb40b9c9432dcae1, type: 3}
+    - target: {fileID: 8955136041571471961, guid: 9aaea1520d80c4347aac17ae00085b22,
+        type: 3}
+      propertyPath: sound.clips.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: ad575b5d941e17f478466213659edec9, type: 3}
+    - target: {fileID: 8955136041571471961, guid: 9aaea1520d80c4347aac17ae00085b22,
+        type: 3}
+      propertyPath: sound.clips.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: 7c8fc09b4e66a664489e7dc9096a9100, type: 3}
+    - target: {fileID: 9176958014151370076, guid: 9aaea1520d80c4347aac17ae00085b22,
+        type: 3}
+      propertyPath: m_Name
+      value: SoundComponent
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9aaea1520d80c4347aac17ae00085b22, type: 3}
+--- !u!4 &2739746239724357171 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 879627387722928022, guid: 9aaea1520d80c4347aac17ae00085b22,
+    type: 3}
+  m_PrefabInstance: {fileID: 3040097710328088997}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6230606983116872700 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8955136041571471961, guid: 9aaea1520d80c4347aac17ae00085b22,
+    type: 3}
+  m_PrefabInstance: {fileID: 3040097710328088997}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ffa20ac694ee244aa83e7f23dcee47b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
