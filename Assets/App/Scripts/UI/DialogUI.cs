@@ -6,6 +6,7 @@ public class DialogUI : MonoBehaviour
 {
     [Header("Settings")]
     [SerializeField] private float speed;
+    [SerializeField] float timeToAnswer = 10;
 
     [Header("References")]
     [SerializeField] private GameObject panel;
@@ -89,7 +90,7 @@ public class DialogUI : MonoBehaviour
             if (dialogEventData.hideDialogPanel) panel.SetActive(false);
 
             dialogEventData.nextDialog.Invoke();
-            onShowAnswerUI.Call(dialogEventData);
+            onShowAnswerUI.Call(dialogEventData, timeToAnswer);
         }
     }
 }

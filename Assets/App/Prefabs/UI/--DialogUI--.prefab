@@ -574,7 +574,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1a9568683193154a8cc9617a17d0f72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.1
+  speed: 0.05
   panel: {fileID: 6219632370030025697}
   nameText: {fileID: 1927134043163197000}
   text: {fileID: 3230902117414130857}
