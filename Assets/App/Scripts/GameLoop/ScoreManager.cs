@@ -10,6 +10,7 @@ public class ScoreManager : MonoBehaviour
     bool isCall = false;
 
     [Header("References")]
+    [SerializeField] private SoundComponent soundComponentPositive,soundComponentNegative;
 
     //[Space(10)]
     // RSO
@@ -26,13 +27,17 @@ public class ScoreManager : MonoBehaviour
     [SerializeField] RSE_FadeIn rseFadeIn;
     [SerializeField] RSE_FadeOut rseFadeOut;
 
+    private int oldScore;
+    
     private void OnEnable()
     {
         rsoCurrentEventCount.OnChanged += OnEventCountChange;
+        rsoScore.OnChanged += CheckScoreChanged;
     }
     private void OnDisable()
     {
         rsoCurrentEventCount.OnChanged -= OnEventCountChange;
+        rsoScore.OnChanged -= CheckScoreChanged;
     }
 
     private void Awake()
@@ -57,6 +62,14 @@ public class ScoreManager : MonoBehaviour
                 }
             }
         }        
+    }
+
+
+    void CheckScoreChanged(int i)
+    {
+        if (i < oldScore) soundComponentNegative.PlayClip();
+        else soundComponentPositive.PlayClip();
+        oldScore = i;
     }
 }
 

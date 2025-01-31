@@ -7,7 +7,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float switchDelay = 2.0f;
 
     [SerializeField] private RSO_PlayerState playerState;
-
+    
+    [SerializeField] private SoundComponent soundComponentSwoosh;
+    
     private bool canSwitch = true;
 
     private void Awake()
@@ -20,6 +22,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && canSwitch)
         {
             StartCoroutine(ResetDelay());
+            soundComponentSwoosh.PlayClip();
 
             if(playerState.Value == PlayerState.Driving) playerState.Value = PlayerState.Dating;
             else playerState.Value = PlayerState.Driving;
