@@ -29,7 +29,7 @@ MonoBehaviour:
         m_Calls: []
   - text: "Ne t\u2019en fais pas, c\u2019est un petit mus\xE9e ind\xE9pendant. Avec
       du vin nature \xE0 la sortie."
-    score: -2
+    score: 2
     eventToCall:
       m_PersistentCalls:
         m_Calls: []
@@ -41,7 +41,7 @@ MonoBehaviour:
         m_Calls: []
   - text: "Si c\u2019est pour critiquer, on aurait d\xFB aller voir du street art
       dans la rue, c\u2019est plus \u2018anti-syst\xE8me\u2019."
-    score: 2
+    score: -5
     eventToCall:
       m_PersistentCalls:
         m_Calls: []

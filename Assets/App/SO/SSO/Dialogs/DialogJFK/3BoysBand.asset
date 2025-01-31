@@ -32,13 +32,13 @@ MonoBehaviour:
         m_Calls: []
   - text: "Si c\u2019\xE9tait \u2018incompris\u2019, c\u2019est peut-\xEAtre parce
       que c\u2019\xE9tait\u2026 mauvais ?"
-    score: 2
+    score: -2
     eventToCall:
       m_PersistentCalls:
         m_Calls: []
   - text: "Je suis s\xFBr qu\u2019avec assez de second degr\xE9, \xE7a peut devenir
       culte."
-    score: -2
+    score: 2
     eventToCall:
       m_PersistentCalls:
         m_Calls: []

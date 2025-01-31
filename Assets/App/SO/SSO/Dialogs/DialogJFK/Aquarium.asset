@@ -34,7 +34,7 @@ MonoBehaviour:
         m_Calls: []
   - text: "On peut toujours boycotter et finir la soir\xE9e devant Le Monde de Nemo
       \xE0 la place."
-    score: 22
+    score: 2
     eventToCall:
       m_PersistentCalls:
         m_Calls: []

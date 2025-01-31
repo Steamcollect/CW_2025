@@ -21,7 +21,7 @@ MonoBehaviour:
   awnsers:
   - text: "On va \xE0 l\u2019aquarium, j\u2019esp\xE8re que tu n\u2019as pas peur
       des poissons."
-    score: -2
+    score: 2
     eventToCall:
       m_PersistentCalls:
         m_Calls:
@@ -41,7 +41,7 @@ MonoBehaviour:
           m_CallState: 2
   - text: "Un mus\xE9e, bien s\xFBr, histoire de flatter ton intellect d\xE9j\xE0
       surdimensionn\xE9."
-    score: -2
+    score: 2
     eventToCall:
       m_PersistentCalls:
         m_Calls:
@@ -60,7 +60,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
   - text: "Restaurant. Parce que j\u2019ai faim, tout simplement."
-    score: 2
+    score: -2
     eventToCall:
       m_PersistentCalls:
         m_Calls:
@@ -80,7 +80,7 @@ MonoBehaviour:
           m_CallState: 2
   - text: "Un parc, pour profiter du bon air et de ton in\xE9puisable discours sur
       la nature."
-    score: 2
+    score: -2
     eventToCall:
       m_PersistentCalls:
         m_Calls:

@@ -20,13 +20,13 @@ MonoBehaviour:
   awnsers:
   - text: "Donc\u2026 c\u2019est l\u2019auto-tune qui a tu\xE9 Les \xC9clipses ?
       Tragique."
-    score: -2
+    score: 2
     eventToCall:
       m_PersistentCalls:
         m_Calls: []
   - text: "\"C\u2019est pas plut\xF4t parce que personne ne voulait acheter votre
       CD ?"
-    score: 2
+    score: -2
     eventToCall:
       m_PersistentCalls:
         m_Calls: []
@@ -38,7 +38,7 @@ MonoBehaviour:
         m_Calls: []
   - text: "T\u2019aurais d\xFB tenter un comeback en solo, Jean-K\xE9vin. Ton talent
       \xE9tait trop grand pour eux."
-    score: -2
+    score: 2
     eventToCall:
       m_PersistentCalls:
         m_Calls: []

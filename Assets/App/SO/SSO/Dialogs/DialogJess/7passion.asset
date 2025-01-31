@@ -10,34 +10,31 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0ec9a86aaa6edcb49a3f36942a635e81, type: 3}
-  m_Name: 7BoysBand
+  m_Name: 7passion
   m_EditorClassIdentifier: 
-  text: "Ne cherche pas sur YouTube\u2026 Il reste encore quelques vid\xE9os de notre
-    premier concert. J\u2019ai essay\xE9 de toutes les supprimer, mais Internet est
-    impitoyable."
+  text: "Ta voiture\u2026 Elle me rappelle une naine blanche. Vieille, mais encore
+    lumineuse."
   hideDialogPanel: 0
   blockQTE: 0
   awnserDescription: 
   awnsers:
-  - text: "Oh non, maintenant je DOIS aller voir \xE7a."
+  - text: Donc elle est petite, dense et va exploser un jour ? Sympa.
     score: 2
     eventToCall:
       m_PersistentCalls:
         m_Calls: []
-  - text: "Internet n\u2019oublie jamais\u2026 Et moi non plus."
+  - text: "J\u2019aime bien cette comparaison. Une \xE9toile sur roues."
     score: -2
     eventToCall:
       m_PersistentCalls:
         m_Calls: []
-  - text: "C\u2019est pas avec cette coupe de cheveux que tu pensais passer inaper\xE7u,
-      avoue."
-    score: -2
+  - text: "\xC7a veut dire qu\u2019elle est en fin de vie ? Rassurant."
+    score: 2
     eventToCall:
       m_PersistentCalls:
         m_Calls: []
-  - text: "Tu pr\xE9f\xE8res que je trouve la vid\xE9o, ou qu\u2019on reparle de
-      ton anxi\xE9t\xE9 sociale ?"
-    score: -5
+  - text: "Merci, je prends \xE7a comme un compliment cosmique."
+    score: -2
     eventToCall:
       m_PersistentCalls:
         m_Calls: []

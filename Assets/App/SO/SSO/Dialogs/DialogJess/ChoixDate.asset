@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ec9a86aaa6edcb49a3f36942a635e81, type: 3}
   m_Name: ChoixDate
   m_EditorClassIdentifier: 
-  text: Bon alors, tu veux aller ou ?
+  text: "On va o\xF9 ?"
   hideDialogPanel: 0
   blockQTE: 0
   awnserDescription: 
   awnsers:
-  - text: "Il y'a une nouvelle expo au mus\xE9e des beaux arts !"
+  - text: Un parc, histoire de profiter du plein air.
     score: 2
     eventToCall:
       m_PersistentCalls:
@@ -28,14 +28,15 @@ MonoBehaviour:
           m_MethodName: Call
           m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgument: {fileID: 11400000, guid: 2358a09e7df44794598d86d566ae4fee,
+              type: 2}
             m_ObjectArgumentAssemblyTypeName: SSO_DialogEventData, Assembly-CSharp
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - text: Je connais un bon resto si tu veux.
+  - text: "Mus\xE9e. Un peu de culture, \xE7a fait toujours du bien."
     score: -2
     eventToCall:
       m_PersistentCalls:
@@ -46,14 +47,15 @@ MonoBehaviour:
           m_MethodName: Call
           m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgument: {fileID: 11400000, guid: 8f90f3f8f4bd95c48b6a04dc778723b4,
+              type: 2}
             m_ObjectArgumentAssemblyTypeName: SSO_DialogEventData, Assembly-CSharp
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - text: L'aquarium de la ville est pas loin si tu veux.
+  - text: Un resto, parce que rien ne vaut un bon repas.
     score: 2
     eventToCall:
       m_PersistentCalls:
@@ -64,14 +66,15 @@ MonoBehaviour:
           m_MethodName: Call
           m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgument: {fileID: 11400000, guid: c07f724cff38bfd419a0393d695a25e3,
+              type: 2}
             m_ObjectArgumentAssemblyTypeName: SSO_DialogEventData, Assembly-CSharp
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - text: On pourrait aller voir le coucher du soleil au parc.
+  - text: "Aquarium. Voir des poissons relaxe, para\xEEt-il."
     score: -2
     eventToCall:
       m_PersistentCalls:
@@ -82,7 +85,8 @@ MonoBehaviour:
           m_MethodName: Call
           m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgument: {fileID: 11400000, guid: ba0d7a32846f8a74c9b760daf24e18d6,
+              type: 2}
             m_ObjectArgumentAssemblyTypeName: SSO_DialogEventData, Assembly-CSharp
             m_IntArgument: 0
             m_FloatArgument: 0

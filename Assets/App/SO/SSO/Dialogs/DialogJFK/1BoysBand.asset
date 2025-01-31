@@ -27,7 +27,7 @@ MonoBehaviour:
         m_Calls: []
   - text: "Attends\u2026 Les \xC9clipses ?! C\u2019est quoi ce nom de groupe de CM2
       ?"
-    score: 2
+    score: -2
     eventToCall:
       m_PersistentCalls:
         m_Calls: []
@@ -38,7 +38,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - text: Je parie que vous aviez un clip avec des ralentis dramatiques sous la pluie.
-    score: -2
+    score: 2
     eventToCall:
       m_PersistentCalls:
         m_Calls: []

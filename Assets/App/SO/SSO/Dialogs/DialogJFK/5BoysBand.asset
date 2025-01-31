@@ -19,7 +19,7 @@ MonoBehaviour:
   awnserDescription: 
   awnsers:
   - text: "Tu r\xE9alises que je vais exiger une d\xE9monstration maintenant ?"
-    score: -2
+    score: 2
     eventToCall:
       m_PersistentCalls:
         m_Calls: []

@@ -20,7 +20,7 @@ MonoBehaviour:
   awnsers:
   - text: "Ou peut-\xEAtre que vous seriez toujours bloqu\xE9s \xE0 jouer dans des
       anniversaires d\u2019enfants."
-    score: -2
+    score: -5
     eventToCall:
       m_PersistentCalls:
         m_Calls: []
@@ -38,7 +38,7 @@ MonoBehaviour:
         m_Calls: []
   - text: "Dans une autre r\xE9alit\xE9, t\u2019es peut-\xEAtre une m\xE9ga star.
       Mais ici, t\u2019es juste Jean-K\xE9vin."
-    score: -2
+    score: -5
     eventToCall:
       m_PersistentCalls:
         m_Calls: []

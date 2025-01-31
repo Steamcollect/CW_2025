@@ -34,7 +34,7 @@ MonoBehaviour:
         m_Calls: []
   - text: "T\u2019as chang\xE9, c\u2019est bien. Mais \xE7a veut dire qu\u2019on
       doit dormir sous un pont ce soir ?"
-    score: 22
+    score: 2
     eventToCall:
       m_PersistentCalls:
         m_Calls: []

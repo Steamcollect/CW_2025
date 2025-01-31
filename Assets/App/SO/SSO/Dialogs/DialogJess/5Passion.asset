@@ -10,35 +10,35 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0ec9a86aaa6edcb49a3f36942a635e81, type: 3}
-  m_Name: 2BoysBand
+  m_Name: 5Passion
   m_EditorClassIdentifier: 
-  text: "J\u2019\xE9tais le myst\xE9rieux du groupe, celui qui disait peu de mots
-    mais dont le regard transper\xE7ait les \xE2mes\u2026 Enfin, c\u2019est ce qu\u2019on
-    avait \xE9crit dans notre dossier de presse."
+  text: "Tu sais qu\u2019il y a plusieurs th\xE9ories sur la fin de l\u2019univers
+    ? Big Crunch, Big Freeze, Big Rip\u2026"
   hideDialogPanel: 0
   blockQTE: 0
   awnserDescription: 
   awnsers:
-  - text: "Donc t\u2019\xE9tais le mec en fond qui faisait des poses pendant que
-      les autres chantaient ?"
+  - text: "Ouais, c\u2019est fascinant. Tout pourrait finir dans un silence glacial
+      ou une explosion totale."
     score: 2
     eventToCall:
       m_PersistentCalls:
         m_Calls: []
-  - text: "On parle bien du m\xEAme Jean-K\xE9vin ? Parce que toi, tu parles tout
-      le temps."
-    score: 2
-    eventToCall:
-      m_PersistentCalls:
-        m_Calls: []
-  - text: "T\u2019aurais pas plut\xF4t \xE9t\xE9 \u2018le mec anxieux qui oublie
-      les paroles\u2019 ?"
+  - text: "J\u2019esp\xE8re juste que \xE7a arrivera pas avant qu\u2019on ait fini
+      notre date."
     score: -2
     eventToCall:
       m_PersistentCalls:
         m_Calls: []
-  - text: "Allez, fais-moi ton regard qui transperce les \xE2mes. Je veux voir \xE7a."
+  - text: "G\xE9nial, donc peu importe ce qu\u2019on fait, tout dispara\xEEtra. Super
+      motivant."
     score: 2
+    eventToCall:
+      m_PersistentCalls:
+        m_Calls: []
+  - text: "T\u2019as d\u2019autres sujets funs ou c\u2019est que de la destruction
+      cosmique ?"
+    score: -2
     eventToCall:
       m_PersistentCalls:
         m_Calls: []
@@ -51,7 +51,7 @@ MonoBehaviour:
         m_MethodName: Call
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 5cc95b34662aed346b6335c53afde58a,
+          m_ObjectArgument: {fileID: 11400000, guid: 47b1aa3dc6106f949bff7686c19abbb1,
             type: 2}
           m_ObjectArgumentAssemblyTypeName: SSO_DialogEventData, Assembly-CSharp
           m_IntArgument: 0

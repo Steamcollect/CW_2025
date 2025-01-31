@@ -10,35 +10,31 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0ec9a86aaa6edcb49a3f36942a635e81, type: 3}
-  m_Name: 2BoysBand
+  m_Name: 3Passion
   m_EditorClassIdentifier: 
-  text: "J\u2019\xE9tais le myst\xE9rieux du groupe, celui qui disait peu de mots
-    mais dont le regard transper\xE7ait les \xE2mes\u2026 Enfin, c\u2019est ce qu\u2019on
-    avait \xE9crit dans notre dossier de presse."
+  text: "Les trous noirs\u2026 Rien ne peut en sortir. M\xEAme la lumi\xE8re. C\u2019est
+    fou."
   hideDialogPanel: 0
   blockQTE: 0
   awnserDescription: 
   awnsers:
-  - text: "Donc t\u2019\xE9tais le mec en fond qui faisait des poses pendant que
-      les autres chantaient ?"
+  - text: "\xC7a d\xE9fie toute logique. Un vrai myst\xE8re de la physique."
     score: 2
     eventToCall:
       m_PersistentCalls:
         m_Calls: []
-  - text: "On parle bien du m\xEAme Jean-K\xE9vin ? Parce que toi, tu parles tout
-      le temps."
-    score: 2
-    eventToCall:
-      m_PersistentCalls:
-        m_Calls: []
-  - text: "T\u2019aurais pas plut\xF4t \xE9t\xE9 \u2018le mec anxieux qui oublie
-      les paroles\u2019 ?"
+  - text: "C\u2019est flippant et fascinant \xE0 la fois. Une force absolue."
     score: -2
     eventToCall:
       m_PersistentCalls:
         m_Calls: []
-  - text: "Allez, fais-moi ton regard qui transperce les \xE2mes. Je veux voir \xE7a."
+  - text: 'Ouais, comme mes notes en maths : une chute infinie.'
     score: 2
+    eventToCall:
+      m_PersistentCalls:
+        m_Calls: []
+  - text: "Si j\u2019en trouve un, je balance mes factures dedans."
+    score: -2
     eventToCall:
       m_PersistentCalls:
         m_Calls: []
@@ -51,7 +47,7 @@ MonoBehaviour:
         m_MethodName: Call
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 5cc95b34662aed346b6335c53afde58a,
+          m_ObjectArgument: {fileID: 11400000, guid: 99b53244bdec4b646a8bd2078a130275,
             type: 2}
           m_ObjectArgumentAssemblyTypeName: SSO_DialogEventData, Assembly-CSharp
           m_IntArgument: 0

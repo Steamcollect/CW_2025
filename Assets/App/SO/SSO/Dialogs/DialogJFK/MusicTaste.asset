@@ -24,7 +24,7 @@ MonoBehaviour:
         m_Calls: []
   - text: "J\u2019\xE9coute de tout, sauf les mecs qui r\xE2lent sur le capitalisme
       avec une guitare."
-    score: 2
+    score: -5
     eventToCall:
       m_PersistentCalls:
         m_Calls: []

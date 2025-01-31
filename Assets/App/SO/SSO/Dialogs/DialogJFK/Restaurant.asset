@@ -25,7 +25,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - text: "Relax, c\u2019est un restau bio, tu vas survivre."
-    score: -2
+    score: 2
     eventToCall:
       m_PersistentCalls:
         m_Calls: []
