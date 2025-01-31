@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0ec9a86aaa6edcb49a3f36942a635e81, type: 3}
-  m_Name: DialogGirl1
+  m_Name: ChoixDate
   m_EditorClassIdentifier: 
   text: Bon alors, tu veux aller ou ?
   hideDialogPanel: 0
@@ -28,8 +28,7 @@ MonoBehaviour:
           m_MethodName: Call
           m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 11400000, guid: 2bf4254c0cc00bb4b84c58adcbfb8c0e,
-              type: 2}
+            m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: SSO_DialogEventData, Assembly-CSharp
             m_IntArgument: 0
             m_FloatArgument: 0
@@ -47,8 +46,7 @@ MonoBehaviour:
           m_MethodName: Call
           m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 11400000, guid: 1fd56dd1d25a53f47920b2c3b1622562,
-              type: 2}
+            m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: SSO_DialogEventData, Assembly-CSharp
             m_IntArgument: 0
             m_FloatArgument: 0
@@ -66,8 +64,7 @@ MonoBehaviour:
           m_MethodName: Call
           m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 11400000, guid: 2bf4254c0cc00bb4b84c58adcbfb8c0e,
-              type: 2}
+            m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: SSO_DialogEventData, Assembly-CSharp
             m_IntArgument: 0
             m_FloatArgument: 0
@@ -85,8 +82,7 @@ MonoBehaviour:
           m_MethodName: Call
           m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 11400000, guid: 1fd56dd1d25a53f47920b2c3b1622562,
-              type: 2}
+            m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: SSO_DialogEventData, Assembly-CSharp
             m_IntArgument: 0
             m_FloatArgument: 0
