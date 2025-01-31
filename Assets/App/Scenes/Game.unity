@@ -1822,7 +1822,7 @@ PrefabInstance:
     - target: {fileID: 2644787905555994760, guid: a25bf7366399ba34fb2d80817c99cd18,
         type: 3}
       propertyPath: qteEvents.Array.size
-      value: 7
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 2644787905555994760, guid: a25bf7366399ba34fb2d80817c99cd18,
         type: 3}
@@ -1846,25 +1846,121 @@ PrefabInstance:
         type: 3}
       propertyPath: qteEvents.Array.data[3]
       value: 
-      objectReference: {fileID: 11400000, guid: 843ef387ee4eaca47900b2fbdc36763a,
+      objectReference: {fileID: 11400000, guid: 073e9fd77f1bd7343800270aac2a3057,
         type: 2}
     - target: {fileID: 2644787905555994760, guid: a25bf7366399ba34fb2d80817c99cd18,
         type: 3}
       propertyPath: qteEvents.Array.data[4]
       value: 
-      objectReference: {fileID: 11400000, guid: 44357368b6d580c40bdaa8233f6e4ea0,
+      objectReference: {fileID: 11400000, guid: bf2f896132c773440a36218964b71bd0,
         type: 2}
     - target: {fileID: 2644787905555994760, guid: a25bf7366399ba34fb2d80817c99cd18,
         type: 3}
       propertyPath: qteEvents.Array.data[5]
       value: 
-      objectReference: {fileID: 11400000, guid: ada2f276fd6c066478c00a3284752e26,
+      objectReference: {fileID: 11400000, guid: a738c517a56623c43a0d2e9bba1acf24,
         type: 2}
     - target: {fileID: 2644787905555994760, guid: a25bf7366399ba34fb2d80817c99cd18,
         type: 3}
       propertyPath: qteEvents.Array.data[6]
       value: 
+      objectReference: {fileID: 11400000, guid: eb0b3d5417b782b4bb1089f0dac2442f,
+        type: 2}
+    - target: {fileID: 2644787905555994760, guid: a25bf7366399ba34fb2d80817c99cd18,
+        type: 3}
+      propertyPath: qteEvents.Array.data[7]
+      value: 
+      objectReference: {fileID: 11400000, guid: 843ef387ee4eaca47900b2fbdc36763a,
+        type: 2}
+    - target: {fileID: 2644787905555994760, guid: a25bf7366399ba34fb2d80817c99cd18,
+        type: 3}
+      propertyPath: qteEvents.Array.data[8]
+      value: 
+      objectReference: {fileID: 11400000, guid: 44357368b6d580c40bdaa8233f6e4ea0,
+        type: 2}
+    - target: {fileID: 2644787905555994760, guid: a25bf7366399ba34fb2d80817c99cd18,
+        type: 3}
+      propertyPath: qteEvents.Array.data[9]
+      value: 
+      objectReference: {fileID: 11400000, guid: 4966bf20768cf2f4e8b07f0719a23bbe,
+        type: 2}
+    - target: {fileID: 2644787905555994760, guid: a25bf7366399ba34fb2d80817c99cd18,
+        type: 3}
+      propertyPath: qteEvents.Array.data[10]
+      value: 
+      objectReference: {fileID: 11400000, guid: a47867ca981f1994c9609fbee0a41ee7,
+        type: 2}
+    - target: {fileID: 2644787905555994760, guid: a25bf7366399ba34fb2d80817c99cd18,
+        type: 3}
+      propertyPath: qteEvents.Array.data[11]
+      value: 
+      objectReference: {fileID: 11400000, guid: 440a86e40b5459949a9504536de02c22,
+        type: 2}
+    - target: {fileID: 2644787905555994760, guid: a25bf7366399ba34fb2d80817c99cd18,
+        type: 3}
+      propertyPath: qteEvents.Array.data[12]
+      value: 
+      objectReference: {fileID: 11400000, guid: 38e42a5e7b9a21d4b8b1335b5d275582,
+        type: 2}
+    - target: {fileID: 2644787905555994760, guid: a25bf7366399ba34fb2d80817c99cd18,
+        type: 3}
+      propertyPath: qteEvents.Array.data[13]
+      value: 
+      objectReference: {fileID: 11400000, guid: b312b30e090f1e64db23e57f1ca6d4b3,
+        type: 2}
+    - target: {fileID: 2644787905555994760, guid: a25bf7366399ba34fb2d80817c99cd18,
+        type: 3}
+      propertyPath: qteEvents.Array.data[14]
+      value: 
+      objectReference: {fileID: 11400000, guid: ada2f276fd6c066478c00a3284752e26,
+        type: 2}
+    - target: {fileID: 2644787905555994760, guid: a25bf7366399ba34fb2d80817c99cd18,
+        type: 3}
+      propertyPath: qteEvents.Array.data[15]
+      value: 
       objectReference: {fileID: 11400000, guid: 7a2e9425fc8419940b9b5b0824ef44cf,
+        type: 2}
+    - target: {fileID: 2644787905555994760, guid: a25bf7366399ba34fb2d80817c99cd18,
+        type: 3}
+      propertyPath: qteEvents.Array.data[16]
+      value: 
+      objectReference: {fileID: 11400000, guid: 759a51d48e936954a8cce1d1b4b518f4,
+        type: 2}
+    - target: {fileID: 2644787905555994760, guid: a25bf7366399ba34fb2d80817c99cd18,
+        type: 3}
+      propertyPath: qteEvents.Array.data[17]
+      value: 
+      objectReference: {fileID: 11400000, guid: ce3d45862dcf705418e64c237864cbaa,
+        type: 2}
+    - target: {fileID: 2644787905555994760, guid: a25bf7366399ba34fb2d80817c99cd18,
+        type: 3}
+      propertyPath: qteEvents.Array.data[18]
+      value: 
+      objectReference: {fileID: 11400000, guid: 21578f6a413171d4fa52d83ac42d53ac,
+        type: 2}
+    - target: {fileID: 2644787905555994760, guid: a25bf7366399ba34fb2d80817c99cd18,
+        type: 3}
+      propertyPath: qteEvents.Array.data[19]
+      value: 
+      objectReference: {fileID: 11400000, guid: f77932cb4e8e18a4384e40af0691b8fb,
+        type: 2}
+    - target: {fileID: 2644787905555994760, guid: a25bf7366399ba34fb2d80817c99cd18,
+        type: 3}
+      propertyPath: qteEvents.Array.data[20]
+      value: 
+      objectReference: {fileID: 11400000, guid: c54248ca3b6e95b4e9a8b7d04dff89cd,
+        type: 2}
+    - target: {fileID: 2644787905555994760, guid: a25bf7366399ba34fb2d80817c99cd18,
+        type: 3}
+      propertyPath: qteEvents.Array.data[21]
+      value: 
+      objectReference: {fileID: 11400000, guid: 397d39ba9fff2ba4780318a983efa8ce,
+        type: 2}
+    - target: {fileID: 2644787905555994760, guid: a25bf7366399ba34fb2d80817c99cd18,
+        type: 3}
+      propertyPath: qteEvents.Array.data[22]
+      value: 
+      objectReference: {fileID: 11400000, guid: 48cca8be01ee87147860f4b32de6dec8,
         type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

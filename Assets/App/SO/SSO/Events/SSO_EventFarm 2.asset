@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f6c91af60c71296429b0135381dfd0fe, type: 3}
-  m_Name: SSO_EventForest 1
+  m_Name: SSO_EventFarm 2
   m_EditorClassIdentifier: Assembly-CSharp::SSO_Event
-  text: "Vous croisez une biche, ne l'\xE9crasez pas"
-  eventLocationType: 2
+  text: "Une vache regarde fixement la voiture, l\u2019air de juger"
+  eventLocationType: 1
