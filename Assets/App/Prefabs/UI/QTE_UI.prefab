@@ -108,7 +108,7 @@ RectTransform:
   m_Father: {fileID: 3069503711394519808}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -210,6 +210,7 @@ MonoBehaviour:
   letterRef: {fileID: 2466132299467513697}
   eventTxt: {fileID: 7503076708464495437}
   lettersContent: {fileID: 5308449381579010837}
+  rsoScore: {fileID: 11400000, guid: 1184a0f4202c5ea41a17629c4023f5ad, type: 2}
   rseSetupUI: {fileID: 11400000, guid: 255daf80895857c49950c74645a914c4, type: 2}
   rseSetTimeSlider: {fileID: 11400000, guid: f21c7cc331fbcb445a7f05a80ab7e7f3, type: 2}
   rseOnQTEKeyMissed: {fileID: 11400000, guid: a10a4207559804b48858dd58e71957db, type: 2}

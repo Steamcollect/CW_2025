@@ -46,13 +46,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68cf4cd8aad9b9341ab4ef646b7d71d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxEventToCallTheEnd: 30
+  maxEventToCallTheEnd: 23
   scoreValue:
-  - minMax: {x: -100, y: 100}
+  - minMax: {x: -5, y: 5}
     manVisuals:
-    - {fileID: 21300000, guid: 24e1adf8f3e52e6488ec5c3c5a7387fa, type: 3}
+    - {fileID: 21300000, guid: 73368f85722b2e34c975d9fa241fa96e, type: 3}
     girlVisuals:
-    - {fileID: 21300000, guid: 70c3a2033b97f7343810cb11df225a0d, type: 3}
+    - {fileID: 21300000, guid: 26ca36d666fd29d4aadd59f920bb9f91, type: 3}
+  - minMax: {x: -15, y: -5}
+    manVisuals:
+    - {fileID: 21300000, guid: 86494a8e7cb31934b8d834bd69a76468, type: 3}
+    girlVisuals:
+    - {fileID: 21300000, guid: 716dc76ec9da38040b7b247e19f384ed, type: 3}
+  - minMax: {x: -9999, y: -15}
+    manVisuals:
+    - {fileID: 21300000, guid: fcb6f42ee2972c9449f4695329bf9d9c, type: 3}
+    girlVisuals:
+    - {fileID: 21300000, guid: 323b6a15e8ae2cb4caeebe9c2d82852c, type: 3}
+  - minMax: {x: 5, y: 15}
+    manVisuals:
+    - {fileID: 21300000, guid: 73368f85722b2e34c975d9fa241fa96e, type: 3}
+    girlVisuals:
+    - {fileID: 21300000, guid: 26ca36d666fd29d4aadd59f920bb9f91, type: 3}
+  - minMax: {x: 15, y: 9999}
+    manVisuals:
+    - {fileID: 21300000, guid: caa5846f1f15dba4f8f8d95c46ef4c12, type: 3}
+    girlVisuals:
+    - {fileID: 21300000, guid: 15cf43b45ede0934da196c49539feeeb, type: 3}
   soundComponentPositive: {fileID: 678604637796479970}
   soundComponentNegative: {fileID: 7174669925940811051}
   rsoScore: {fileID: 11400000, guid: 1184a0f4202c5ea41a17629c4023f5ad, type: 2}

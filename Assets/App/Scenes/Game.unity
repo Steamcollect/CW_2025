@@ -1326,21 +1326,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: QTE_UI
       objectReference: {fileID: 0}
-    - target: {fileID: 5456523958353098185, guid: f162000e392d5e5469668e8b82e8ee3e,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5975241678061839984, guid: f162000e392d5e5469668e8b82e8ee3e,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6152310359179145498, guid: f162000e392d5e5469668e8b82e8ee3e,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6196268053205122262, guid: f162000e392d5e5469668e8b82e8ee3e,
         type: 3}
       propertyPath: m_Pivot.x
@@ -1440,11 +1425,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7503076708464495437, guid: f162000e392d5e5469668e8b82e8ee3e,
-        type: 3}
-      propertyPath: m_text
-      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1789,11 +1769,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: QTE_Manager
       objectReference: {fileID: 0}
-    - target: {fileID: 1446218192468519474, guid: a25bf7366399ba34fb2d80817c99cd18,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1527162437336333081, guid: a25bf7366399ba34fb2d80817c99cd18,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1843,84 +1818,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2644787905555994760, guid: a25bf7366399ba34fb2d80817c99cd18,
-        type: 3}
-      propertyPath: qteEvents.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2644787905555994760, guid: a25bf7366399ba34fb2d80817c99cd18,
-        type: 3}
-      propertyPath: qteEvents.Array.data[0]
-      value: 
-      objectReference: {fileID: 11400000, guid: d5b16229866b45444a6054d333ea47c9,
-        type: 2}
-    - target: {fileID: 2644787905555994760, guid: a25bf7366399ba34fb2d80817c99cd18,
-        type: 3}
-      propertyPath: qteEvents.Array.data[1]
-      value: 
-      objectReference: {fileID: 11400000, guid: 843ef387ee4eaca47900b2fbdc36763a,
-        type: 2}
-    - target: {fileID: 2644787905555994760, guid: a25bf7366399ba34fb2d80817c99cd18,
-        type: 3}
-      propertyPath: qteEvents.Array.data[2]
-      value: 
-      objectReference: {fileID: 11400000, guid: ada2f276fd6c066478c00a3284752e26,
-        type: 2}
-    - target: {fileID: 2644787905555994760, guid: a25bf7366399ba34fb2d80817c99cd18,
-        type: 3}
-      propertyPath: timeBetweenQTE_InTime.m_Curve.Array.data[1].time
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2644787905555994760, guid: a25bf7366399ba34fb2d80817c99cd18,
-        type: 3}
-      propertyPath: timeBetweenQTE_InTime.m_Curve.Array.data[0].value
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2644787905555994760, guid: a25bf7366399ba34fb2d80817c99cd18,
-        type: 3}
-      propertyPath: timeBetweenQTE_InTime.m_Curve.Array.data[1].value
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2644787905555994760, guid: a25bf7366399ba34fb2d80817c99cd18,
-        type: 3}
-      propertyPath: timeBetweenQTE_InTime.m_Curve.Array.data[0].inSlope
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2644787905555994760, guid: a25bf7366399ba34fb2d80817c99cd18,
-        type: 3}
-      propertyPath: timeBetweenQTE_InTime.m_Curve.Array.data[1].inSlope
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2644787905555994760, guid: a25bf7366399ba34fb2d80817c99cd18,
-        type: 3}
-      propertyPath: timeBetweenQTE_InTime.m_Curve.Array.data[0].outSlope
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2644787905555994760, guid: a25bf7366399ba34fb2d80817c99cd18,
-        type: 3}
-      propertyPath: timeBetweenQTE_InTime.m_Curve.Array.data[1].inWeight
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2644787905555994760, guid: a25bf7366399ba34fb2d80817c99cd18,
-        type: 3}
-      propertyPath: timeBetweenQTE_InTime.m_Curve.Array.data[1].outSlope
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2644787905555994760, guid: a25bf7366399ba34fb2d80817c99cd18,
-        type: 3}
-      propertyPath: timeBetweenQTE_InTime.m_Curve.Array.data[0].outWeight
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2644787905555994760, guid: a25bf7366399ba34fb2d80817c99cd18,
-        type: 3}
-      propertyPath: timeBetweenQTE_InTime.m_Curve.Array.data[0].tangentMode
-      value: 34
-      objectReference: {fileID: 0}
-    - target: {fileID: 2644787905555994760, guid: a25bf7366399ba34fb2d80817c99cd18,
-        type: 3}
-      propertyPath: timeBetweenQTE_InTime.m_Curve.Array.data[1].tangentMode
-      value: 34
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -25,8 +25,9 @@ public class QTE_UI : MonoBehaviour
 
     List<TMP_Text> letters = new();
 
-    //[Space(10)]
+    [Space(10)]
     // RSO
+    [SerializeField] RSO_PlayerScore rsoScore;
     // RSF
     // RSP
 
@@ -153,7 +154,7 @@ public class QTE_UI : MonoBehaviour
             letter.transform.DOPunchRotation(Vector3.forward * 10, 0.5f, 10, 1); // Toutes tremblent
         }
 
-        StartCoroutine(DelayBeforeReset());
+        ScoreManager.instance.Lose();
     }
 
 

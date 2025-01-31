@@ -1,3 +1,4 @@
+using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -29,6 +30,8 @@ public class ScoreManager : MonoBehaviour
 
     private int oldScore;
     
+    public static ScoreManager instance;
+
     private void OnEnable()
     {
         rsoCurrentEventCount.OnChanged += OnEventCountChange;
@@ -42,6 +45,8 @@ public class ScoreManager : MonoBehaviour
 
     private void Awake()
     {
+        instance = this;
+
         rsoCurrentEventCount.Value = 0;
         rseFadeIn.Call();
     }
@@ -62,6 +67,17 @@ public class ScoreManager : MonoBehaviour
                 }
             }
         }        
+    }
+
+    public void Lose()
+    {
+        isCall = true;
+
+        scoreValue = scoreValue.OrderBy(x => x.minMax.x).ToArray();
+
+        rsoCinematicVisual.Value = rsoCurrentCharacter.Value.isMan ? scoreValue[0].manVisuals : scoreValue[0].girlVisuals;
+        rseFadeOut.Call();
+        rseAudioFadeOut.Call(() => SceneManager.LoadScene("Cinematic"));
     }
 
 
