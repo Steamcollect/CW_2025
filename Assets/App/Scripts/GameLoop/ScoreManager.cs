@@ -23,6 +23,8 @@ public class ScoreManager : MonoBehaviour
     //[Header("Input")]
     [Header("Output")]
     [SerializeField] RSE_AudioFadeOut rseAudioFadeOut;
+    [SerializeField] RSE_FadeIn rseFadeIn;
+    [SerializeField] RSE_FadeOut rseFadeOut;
 
     private void OnEnable()
     {
@@ -36,6 +38,7 @@ public class ScoreManager : MonoBehaviour
     private void Awake()
     {
         rsoCurrentEventCount.Value = 0;
+        rseFadeIn.Call();
     }
 
     void OnEventCountChange(int eventCount)
@@ -48,6 +51,7 @@ public class ScoreManager : MonoBehaviour
                 if (scoreValue[i].minMax.x <= rsoScore.Value && scoreValue[i].minMax.y >= rsoScore.Value)
                 {
                     rsoCinematicVisual.Value = rsoCurrentCharacter.Value.isMan ? scoreValue[i].manVisuals : scoreValue[i].girlVisuals;
+                    rseFadeOut.Call();
                     rseAudioFadeOut.Call(() => SceneManager.LoadScene("Cinematic"));
                     return;
                 }

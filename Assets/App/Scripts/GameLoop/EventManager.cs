@@ -37,8 +37,7 @@ public class EventManager : MonoBehaviour
         if ( !_eventWaiting || _eventRunning) return;
 
         if (_currentEvent.time <= _internalTime && _timeSinceLastEvent >= timeBetweenEvents)
-        {
-            
+        {            
             _timeSinceLastEvent = 0f;
             ProcessEvent(_currentEvent);
             if (_events.Count <= 0)

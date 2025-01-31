@@ -9,6 +9,7 @@ public class CinematiqueUI : MonoBehaviour
 {
     [Header("Settings")]
     [SerializeField] Vector2 minMaxRot;
+    bool canInteract = true;
 
     [Header("References")]
     [SerializeField] Transform visualContent;
@@ -44,7 +45,9 @@ public class CinematiqueUI : MonoBehaviour
     [Header("Input")]
     [SerializeField] RSE_SetupCinematics rseSetupCinematics;
     [Header("Output")]
-    [SerializeField] RSE_AudioFadeOut rseFadeOut;
+    [SerializeField] RSE_AudioFadeOut rseAudioFadeOut;
+    [SerializeField] RSE_FadeIn rseFadeIn;
+    [SerializeField] RSE_FadeOut rseFadeOut;
 
     private void OnEnable()
     {
@@ -53,6 +56,11 @@ public class CinematiqueUI : MonoBehaviour
     private void OnDisable()
     {
         rseSetupCinematics.action -= CreateImages;
+    }
+
+    private void Awake()
+    {
+        rseFadeIn.Call();
     }
 
     private void Start()
@@ -106,6 +114,9 @@ public class CinematiqueUI : MonoBehaviour
 
     public void MainMenuButton()
     {
-        rseFadeOut.Call(() => SceneManager.LoadScene("MainMenu"));
+        if (!canInteract) return;
+        canInteract = false;
+        rseFadeOut.Call();
+        rseAudioFadeOut.Call(() => SceneManager.LoadScene("MainMenu"));
     }
 }

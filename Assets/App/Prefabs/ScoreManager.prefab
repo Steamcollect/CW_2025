@@ -58,3 +58,5 @@ MonoBehaviour:
     type: 2}
   rsoCinematicVisual: {fileID: 11400000, guid: bef010d37b28e194db0df39bc4fa042e, type: 2}
   rseAudioFadeOut: {fileID: 11400000, guid: 3cbb817cbce61d342abdae1d58b98bf9, type: 2}
+  rseFadeIn: {fileID: 11400000, guid: 525ef74773451a04881efda523e14ce0, type: 2}
+  rseFadeOut: {fileID: 11400000, guid: b483e4f6a1df8aa4aa3c6a433575f89e, type: 2}
