@@ -12,28 +12,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ec9a86aaa6edcb49a3f36942a635e81, type: 3}
   m_Name: DialogGirl9
   m_EditorClassIdentifier: 
-  text: Tu crois qu'on est seuls dans l'univers ?
+  text: "Tu penses quoi du m\xE9tier d'esth\xE9ticienne ?"
   hideDialogPanel: 0
   blockQTE: 0
   awnserDescription: 
   awnsers:
-  - text: "Bien s\xFBr que non ! L'univers est bien trop vaste"
+  - text: "C'est g\xE9nial, \xE7a aide les gens \xE0 se sentir bien dans leur peau"
     score: 2
     eventToCall:
       m_PersistentCalls:
         m_Calls: []
-  - text: "Ouais, sinon on aurait d\xE9j\xE0 capt\xE9 des signaux extraterrestres"
-    score: 0
+  - text: C'est sympa, mais j'y connais rien du tout
+    score: 1
     eventToCall:
       m_PersistentCalls:
         m_Calls: []
-  - text: Franchement, je m'en fous. Tant qu'ils me piquent pas mon McDo, tout va
-      bien
+  - text: "Honn\xEAtement, j'vois pas trop l'int\xE9r\xEAt"
     score: -1
     eventToCall:
       m_PersistentCalls:
         m_Calls: []
-  - text: "Les extraterrestres, c'est juste un d\xE9lire pour vendre des films"
+  - text: "C'est pas un vrai m\xE9tier LOOOOL"
     score: -2
     eventToCall:
       m_PersistentCalls:
